@@ -1,0 +1,1 @@
+Submit a script or patch, its declared dependencies and the required output files. Use `submission.example.json` as a template, naming it `submission.json`. Paths must stay within your submission folder. Do not include the scorer or reference assets as your solution. Review precedes all outside-code execution. See the root CONTRIBUTING.md.

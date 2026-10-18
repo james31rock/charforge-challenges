@@ -1,0 +1,637 @@
+{
+  "status": "FAIL",
+  "challenge": "hand-plant",
+  "scope": "C7 native hand support; full motion acceptance requires review",
+  "eligible_submission": true,
+  "submission_sha256": "72690526401d741c3e5259e7b22f9c3ecdca67a5b966f8df29900bed3b6d56d2",
+  "checks": [
+    {
+      "id": "C7.palm_plane",
+      "status": "FAIL",
+      "value": 15.563848642961101,
+      "threshold": 15.0,
+      "unit": "degrees",
+      "frames": [
+        58,
+        59,
+        60
+      ],
+      "detail": "Palm-facing fitted skin plane to downward floor normal; dorsal support fails.",
+      "witnesses": [
+        {
+          "frame": 58,
+          "side": "L",
+          "value": 15.115772962982978
+        },
+        {
+          "frame": 59,
+          "side": "L",
+          "value": 15.563848642961101
+        },
+        {
+          "frame": 60,
+          "side": "L",
+          "value": 15.171139794573929
+        }
+      ],
+      "applicable": true
+    },
+    {
+      "id": "C7.palm_contact",
+      "status": "FAIL",
+      "value": 0.00852651412025331,
+      "threshold": 0.006,
+      "unit": "height",
+      "frames": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "detail": "Maximum absolute height of four fixed palm skin patches during source support.",
+      "witnesses": [
+        {
+          "frame": 47,
+          "side": "L",
+          "value": 0.0076333402042735535
+        },
+        {
+          "frame": 48,
+          "side": "L",
+          "value": 0.007491562174275941
+        },
+        {
+          "frame": 49,
+          "side": "L",
+          "value": 0.006946496215098391
+        },
+        {
+          "frame": 50,
+          "side": "L",
+          "value": 0.006736568797617215
+        },
+        {
+          "frame": 51,
+          "side": "L",
+          "value": 0.0066134054757871485
+        },
+        {
+          "frame": 52,
+          "side": "L",
+          "value": 0.006406282256166694
+        },
+        {
+          "frame": 53,
+          "side": "L",
+          "value": 0.006567366819461964
+        },
+        {
+          "frame": 54,
+          "side": "L",
+          "value": 0.006664499067729685
+        },
+        {
+          "frame": 55,
+          "side": "L",
+          "value": 0.006891906600165023
+        },
+        {
+          "frame": 56,
+          "side": "L",
+          "value": 0.00693487355291251
+        },
+        {
+          "frame": 57,
+          "side": "L",
+          "value": 0.007199528950353077
+        },
+        {
+          "frame": 58,
+          "side": "L",
+          "value": 0.007100579508076929
+        },
+        {
+          "frame": 59,
+          "side": "L",
+          "value": 0.006920732647253022
+        },
+        {
+          "frame": 60,
+          "side": "L",
+          "value": 0.007283055304395262
+        },
+        {
+          "frame": 61,
+          "side": "L",
+          "value": 0.007656548631305044
+        },
+        {
+          "frame": 62,
+          "side": "L",
+          "value": 0.008113337703880306
+        },
+        {
+          "frame": 63,
+          "side": "L",
+          "value": 0.008415582266723624
+        },
+        {
+          "frame": 43,
+          "side": "R",
+          "value": 0.0070581660154335315
+        },
+        {
+          "frame": 44,
+          "side": "R",
+          "value": 0.007488887117106175
+        },
+        {
+          "frame": 45,
+          "side": "R",
+          "value": 0.007845610602862043
+        },
+        {
+          "frame": 46,
+          "side": "R",
+          "value": 0.007917966287136686
+        },
+        {
+          "frame": 47,
+          "side": "R",
+          "value": 0.00852651412025331
+        },
+        {
+          "frame": 48,
+          "side": "R",
+          "value": 0.008320055052757762
+        }
+      ],
+      "applicable": true
+    },
+    {
+      "id": "C7.wrist_extension",
+      "status": "FAIL",
+      "value": 20.070946581910803,
+      "threshold": 5.0,
+      "unit": "degrees outside band",
+      "frames": [
+        43,
+        44,
+        45,
+        46,
+        48,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "detail": "Signed anatomical extension outside reviewed source band or configured fallback; flexion is negative.",
+      "witnesses": [
+        {
+          "frame": 54,
+          "side": "L",
+          "value": 5.5510462775294656
+        },
+        {
+          "frame": 55,
+          "side": "L",
+          "value": 8.26258963352798
+        },
+        {
+          "frame": 56,
+          "side": "L",
+          "value": 14.994648232594017
+        },
+        {
+          "frame": 57,
+          "side": "L",
+          "value": 19.595015988369127
+        },
+        {
+          "frame": 58,
+          "side": "L",
+          "value": 20.070946581910803
+        },
+        {
+          "frame": 59,
+          "side": "L",
+          "value": 15.745453001371573
+        },
+        {
+          "frame": 60,
+          "side": "L",
+          "value": 8.431934822818036
+        },
+        {
+          "frame": 43,
+          "side": "R",
+          "value": 18.659501153378443
+        },
+        {
+          "frame": 44,
+          "side": "R",
+          "value": 13.727084173041902
+        },
+        {
+          "frame": 45,
+          "side": "R",
+          "value": 7.781883351046517
+        },
+        {
+          "frame": 46,
+          "side": "R",
+          "value": 8.101359582117155
+        },
+        {
+          "frame": 48,
+          "side": "R",
+          "value": 6.282559396352099
+        }
+      ],
+      "applicable": true
+    },
+    {
+      "id": "C7.hand_skate",
+      "status": "FAIL",
+      "value": 0.19398308653091542,
+      "threshold": 0.08,
+      "unit": "height/s",
+      "frames": [
+        46,
+        47,
+        56,
+        57,
+        58,
+        59,
+        62
+      ],
+      "detail": "Maximum 3D speed of fixed palm material patches within source episodes, including floating hands.",
+      "witnesses": [
+        {
+          "frame": 56,
+          "side": "L",
+          "value": 0.10991117860096918
+        },
+        {
+          "frame": 57,
+          "side": "L",
+          "value": 0.1585808588906153
+        },
+        {
+          "frame": 58,
+          "side": "L",
+          "value": 0.19398308653091542
+        },
+        {
+          "frame": 59,
+          "side": "L",
+          "value": 0.11369886575723012
+        },
+        {
+          "frame": 62,
+          "side": "L",
+          "value": 0.09942371494824272
+        },
+        {
+          "frame": 46,
+          "side": "R",
+          "value": 0.08180667459209207
+        },
+        {
+          "frame": 47,
+          "side": "R",
+          "value": 0.15151118106014036
+        }
+      ],
+      "applicable": true
+    },
+    {
+      "id": "C7.hand_ground_penetration",
+      "status": "FAIL",
+      "value": 0.010198793824759961,
+      "threshold": 0.001,
+      "unit": "height",
+      "frames": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "detail": "Minimum evaluated hand/finger skin height below fixed ground.",
+      "witnesses": [
+        {
+          "frame": 47,
+          "side": "L",
+          "value": 0.009942043682472807
+        },
+        {
+          "frame": 48,
+          "side": "L",
+          "value": 0.010198793824759961
+        },
+        {
+          "frame": 49,
+          "side": "L",
+          "value": 0.01015719207360256
+        },
+        {
+          "frame": 50,
+          "side": "L",
+          "value": 0.00999475153305227
+        },
+        {
+          "frame": 51,
+          "side": "L",
+          "value": 0.009555599389127329
+        },
+        {
+          "frame": 52,
+          "side": "L",
+          "value": 0.00851714219582406
+        },
+        {
+          "frame": 53,
+          "side": "L",
+          "value": 0.008163822489708343
+        },
+        {
+          "frame": 54,
+          "side": "L",
+          "value": 0.007834605971125728
+        },
+        {
+          "frame": 55,
+          "side": "L",
+          "value": 0.007746817974282053
+        },
+        {
+          "frame": 56,
+          "side": "L",
+          "value": 0.007307868765728611
+        },
+        {
+          "frame": 57,
+          "side": "L",
+          "value": 0.0072368506100388506
+        },
+        {
+          "frame": 58,
+          "side": "L",
+          "value": 0.007077813849128711
+        },
+        {
+          "frame": 59,
+          "side": "L",
+          "value": 0.006888392128504054
+        },
+        {
+          "frame": 60,
+          "side": "L",
+          "value": 0.007124987098667279
+        },
+        {
+          "frame": 61,
+          "side": "L",
+          "value": 0.007355060463937316
+        },
+        {
+          "frame": 62,
+          "side": "L",
+          "value": 0.007861291972477914
+        },
+        {
+          "frame": 63,
+          "side": "L",
+          "value": 0.007593841601511694
+        },
+        {
+          "frame": 43,
+          "side": "R",
+          "value": 0.007007690453940562
+        },
+        {
+          "frame": 44,
+          "side": "R",
+          "value": 0.007330855808718465
+        },
+        {
+          "frame": 45,
+          "side": "R",
+          "value": 0.007508737886172854
+        },
+        {
+          "frame": 46,
+          "side": "R",
+          "value": 0.007474165078337392
+        },
+        {
+          "frame": 47,
+          "side": "R",
+          "value": 0.008284024799981532
+        },
+        {
+          "frame": 48,
+          "side": "R",
+          "value": 0.008453180656461442
+        }
+      ],
+      "applicable": true
+    },
+    {
+      "id": "C7.support_fingers",
+      "status": "PASS",
+      "value": 0.0027366089275026526,
+      "threshold": 20.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Maximum sagittal phalanx deviation or joint bend, four fingers; spread allowed, thumb excluded.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.rest_wrist",
+      "status": "PASS",
+      "value": 0.0001877273330897657,
+      "threshold": 10.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Evaluated neutral rig, animation disabled; open neutral asset profile. Rest witnesses use frame 0.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.rest_fingers",
+      "status": "PASS",
+      "value": 1.6582122002442625,
+      "threshold": 20.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Evaluated neutral rig, animation disabled; open neutral asset profile. Rest witnesses use frame 0.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "rig.limb_attachment",
+      "status": "PASS",
+      "value": 6.088061144985324e-07,
+      "threshold": 0.0001,
+      "unit": "height",
+      "detail": "Arm/leg joint-head distances must preserve the fixed rig lengths"
+    }
+  ],
+  "coverage": {
+    "required": true,
+    "source_bound": true,
+    "complete_support_coverage": true,
+    "expected_frames": {
+      "L": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "R": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    "wrist_extension_bands_deg": {
+      "L": [
+        60.0,
+        90.0
+      ],
+      "R": [
+        60.0,
+        90.0
+      ]
+    },
+    "thumb_coverage": false,
+    "source": {
+      "schema": "qa-hand-support/1",
+      "bound": true,
+      "fps": 24,
+      "frame_count": 97,
+      "hands": {
+        "L": {
+          "joint": "LeftHandIndex1",
+          "intervals": [
+            [
+              46,
+              63
+            ]
+          ],
+          "source_slide": {
+            "episodes": [
+              {
+                "start": 46,
+                "end_exclusive": 63,
+                "excursion_m": 0.39235855371287665,
+                "p95_speed_m_s": 1.0509720579828625,
+                "max_speed_m_s": 1.6140602988762707
+              }
+            ],
+            "max_excursion_m": 0.39235855371287665,
+            "p95_speed_m_s": 1.0509720579828625
+          },
+          "method": "Reviewed source-only support annotation; raw heights and velocities retained; Inspected 49_06 source front and three-quarter poses and full-rate hand trajectories. Right low-hand support precedes left during inversion. Converted hand landmarks sit 0.089 to 0.181 m above the toe-derived floor; these are inferred physical palm supports, not claims of millimetre-accurate raw capture. No target geometry or score was consulted.",
+          "automatic_intervals": [
+            [
+              61,
+              63
+            ]
+          ],
+          "annotated_source_height_range_m": [
+            0.08908994780630416,
+            0.17602657044838863
+          ]
+        },
+        "R": {
+          "joint": "RightHandIndex1",
+          "intervals": [
+            [
+              42,
+              48
+            ]
+          ],
+          "source_slide": {
+            "episodes": [
+              {
+                "start": 42,
+                "end_exclusive": 48,
+                "excursion_m": 0.12062103866428969,
+                "p95_speed_m_s": 1.2955235608957525,
+                "max_speed_m_s": 1.50271352678298
+              }
+            ],
+            "max_excursion_m": 0.12062103866428969,
+            "p95_speed_m_s": 1.2955235608957525
+          },
+          "method": "Reviewed source-only support annotation; raw heights and velocities retained; Inspected 49_06 source front and three-quarter poses and full-rate hand trajectories. Right low-hand support precedes left during inversion. Converted hand landmarks sit 0.089 to 0.181 m above the toe-derived floor; these are inferred physical palm supports, not claims of millimetre-accurate raw capture. No target geometry or score was consulted.",
+          "automatic_intervals": [],
+          "annotated_source_height_range_m": [
+            0.10533809663544139,
+            0.1809391433452234
+          ]
+        }
+      },
+      "source_sha256": "b874515da17432e8d78f3720f55123a92ab5621e6fecedbceb10165cc0cc2c3d",
+      "cache_sha256": "72690526401d741c3e5259e7b22f9c3ecdca67a5b966f8df29900bed3b6d56d2"
+    }
+  },
+  "height_m": 1.6154184647176635,
+  "rig_sha256": "e97658b24a5a0d195db0d09a95e48b41ffe0494ea32fe609e16d2e4ffe0e445a"
+}

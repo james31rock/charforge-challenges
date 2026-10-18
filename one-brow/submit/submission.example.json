@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "challenge": "one-brow",
+  "method": "Describe the reusable algorithm and its limitations",
+  "code": "solution.py",
+  "code_license": "MIT",
+  "outputs": [
+    "face.blend",
+    "feature-free.png",
+    "face-demo.mp4",
+    "binding.json",
+    "atlases/"
+  ],
+  "command": "python solution.py",
+  "dependencies": []
+}

@@ -1,0 +1,37 @@
+{
+  "source_plan": {
+    "fps": 24,
+    "hands": {
+      "L": {
+        "joint": "Lwrist",
+        "intervals": [
+          [
+            0,
+            24
+          ]
+        ],
+        "method": "Original synthetic intended stationary palm support"
+      },
+      "R": {
+        "joint": "Rwrist",
+        "intervals": [
+          [
+            0,
+            24
+          ]
+        ],
+        "method": "Original synthetic intended stationary palm support"
+      }
+    },
+    "feet": {
+      "L": {
+        "intervals": []
+      },
+      "R": {
+        "intervals": []
+      }
+    }
+  },
+  "cache_sha256": "7f1ce4050b4730566c383786604518e511240db2d6b88fb3f15ead534827cf8b",
+  "source_sha256": "a3faf472c1d7859be7abc0eea74f9d44ee20066c0ca98d90d223fc60e57a36be"
+}

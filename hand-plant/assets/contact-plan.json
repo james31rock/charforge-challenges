@@ -1,0 +1,68 @@
+{
+  "fps": 24,
+  "hands": {
+    "L": {
+      "joint": "LeftHandIndex1",
+      "intervals": [
+        [
+          46,
+          63
+        ]
+      ],
+      "source_slide": {
+        "episodes": [
+          {
+            "start": 46,
+            "end_exclusive": 63,
+            "excursion_m": 0.39235855371287665,
+            "p95_speed_m_s": 1.0509720579828625,
+            "max_speed_m_s": 1.6140602988762707
+          }
+        ],
+        "max_excursion_m": 0.39235855371287665,
+        "p95_speed_m_s": 1.0509720579828625
+      },
+      "method": "Reviewed source-only support annotation; raw heights and velocities retained; Inspected 49_06 source front and three-quarter poses and full-rate hand trajectories. Right low-hand support precedes left during inversion. Converted hand landmarks sit 0.089 to 0.181 m above the toe-derived floor; these are inferred physical palm supports, not claims of millimetre-accurate raw capture. No target geometry or score was consulted.",
+      "automatic_intervals": [
+        [
+          61,
+          63
+        ]
+      ],
+      "annotated_source_height_range_m": [
+        0.08908994780630416,
+        0.17602657044838863
+      ]
+    },
+    "R": {
+      "joint": "RightHandIndex1",
+      "intervals": [
+        [
+          42,
+          48
+        ]
+      ],
+      "source_slide": {
+        "episodes": [
+          {
+            "start": 42,
+            "end_exclusive": 48,
+            "excursion_m": 0.12062103866428969,
+            "p95_speed_m_s": 1.2955235608957525,
+            "max_speed_m_s": 1.50271352678298
+          }
+        ],
+        "max_excursion_m": 0.12062103866428969,
+        "p95_speed_m_s": 1.2955235608957525
+      },
+      "method": "Reviewed source-only support annotation; raw heights and velocities retained; Inspected 49_06 source front and three-quarter poses and full-rate hand trajectories. Right low-hand support precedes left during inversion. Converted hand landmarks sit 0.089 to 0.181 m above the toe-derived floor; these are inferred physical palm supports, not claims of millimetre-accurate raw capture. No target geometry or score was consulted.",
+      "automatic_intervals": [],
+      "annotated_source_height_range_m": [
+        0.10533809663544139,
+        0.1809391433452234
+      ]
+    }
+  },
+  "source_sha256": "b874515da17432e8d78f3720f55123a92ab5621e6fecedbceb10165cc0cc2c3d",
+  "source_description": "CMU 49_06; reviewed source intervals, not measured physical palm contacts."
+}

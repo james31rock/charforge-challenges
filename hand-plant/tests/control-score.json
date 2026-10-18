@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "challenge": "hand-plant",
+  "scope": "synthetic extractor control",
+  "eligible_submission": false,
+  "submission_sha256": "7f1ce4050b4730566c383786604518e511240db2d6b88fb3f15ead534827cf8b",
+  "checks": [
+    {
+      "id": "C7.palm_plane",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 15.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Palm-facing fitted skin plane to downward floor normal; dorsal support fails.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.palm_contact",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 0.006,
+      "unit": "height",
+      "frames": [],
+      "detail": "Maximum absolute height of four fixed palm skin patches during source support.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.wrist_extension",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 5.0,
+      "unit": "degrees outside band",
+      "frames": [],
+      "detail": "Signed anatomical extension outside reviewed source band or configured fallback; flexion is negative.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.hand_skate",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 0.08,
+      "unit": "height/s",
+      "frames": [],
+      "detail": "Maximum 3D speed of fixed palm material patches within source episodes, including floating hands.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.hand_ground_penetration",
+      "status": "PASS",
+      "value": 3.7252902429507635e-08,
+      "threshold": 0.001,
+      "unit": "height",
+      "frames": [],
+      "detail": "Minimum evaluated hand/finger skin height below fixed ground.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.support_fingers",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 20.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Maximum sagittal phalanx deviation or joint bend, four fingers; spread allowed, thumb excluded.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.rest_wrist",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 10.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Evaluated neutral rig, animation disabled; open neutral asset profile. Rest witnesses use frame 0.",
+      "witnesses": [],
+      "applicable": true
+    },
+    {
+      "id": "C7.rest_fingers",
+      "status": "PASS",
+      "value": 0.0,
+      "threshold": 20.0,
+      "unit": "degrees",
+      "frames": [],
+      "detail": "Evaluated neutral rig, animation disabled; open neutral asset profile. Rest witnesses use frame 0.",
+      "witnesses": [],
+      "applicable": true
+    }
+  ],
+  "coverage": {
+    "required": true,
+    "source_bound": true,
+    "complete_support_coverage": true,
+    "expected_frames": {
+      "L": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "R": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "wrist_extension_bands_deg": {
+      "L": [
+        60.0,
+        90.0
+      ],
+      "R": [
+        60.0,
+        90.0
+      ]
+    },
+    "thumb_coverage": false,
+    "source": {
+      "schema": "qa-hand-support/1",
+      "bound": true,
+      "fps": 24,
+      "frame_count": 24,
+      "hands": {
+        "L": {
+          "joint": "Lwrist",
+          "intervals": [
+            [
+              0,
+              24
+            ]
+          ],
+          "method": "Original synthetic intended stationary palm support"
+        },
+        "R": {
+          "joint": "Rwrist",
+          "intervals": [
+            [
+              0,
+              24
+            ]
+          ],
+          "method": "Original synthetic intended stationary palm support"
+        }
+      },
+      "source_sha256": "a3faf472c1d7859be7abc0eea74f9d44ee20066c0ca98d90d223fc60e57a36be",
+      "cache_sha256": "7f1ce4050b4730566c383786604518e511240db2d6b88fb3f15ead534827cf8b"
+    }
+  },
+  "height_m": 1.600000023841858,
+  "rig_sha256": "e2a392e792d659a27f22d707f9133c9c2b135d2a55a8abd761011c8941d1afd5"
+}

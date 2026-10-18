@@ -1,0 +1,37 @@
+[
+  {
+    "path": "garment-separation/vendor/metrics.py",
+    "sha256": "f4687b1691da0ee6cce440de679f28b9dcf736c52dd0ec051d6d25e8694fb325",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "hand-plant/vendor/geometry.py",
+    "sha256": "84202663c12aaed43c179f3ffc9f8cbfc3c705caf7d39ef3e2565b5e68154226",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "hand-plant/vendor/hands.py",
+    "sha256": "124d233c41d04d9497fea9f8237f95131c2d5a2f6d1deba058b088487141a0f2",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "hand-plant/vendor/skin.py",
+    "sha256": "a414d3debac341b7c6b7da5c3959de2cccfe34caa9438f7a572b53df2b7a2adc",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "one-brow/vendor/layers.py",
+    "sha256": "bc2cdc078416c4c9217bdf61fd99cf45a4c57b39c45c1eae8a194b0c01e4460b",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "one-brow/vendor/pixels.py",
+    "sha256": "2e8c5c80758d4f508ab7f7a4ecf68dedff9001c964dddd2309c08c947abe7d52",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  },
+  {
+    "path": "one-brow/vendor/raster.py",
+    "sha256": "984e4090e395b578607f04155fffaf535721099e68f3c9dd22eedab7d69d620d",
+    "origin": "Minimal in-house check subset; MIT, released under MIT"
+  }
+]

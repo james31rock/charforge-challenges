@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "challenge",
+    "method",
+    "code",
+    "code_license",
+    "outputs",
+    "command",
+    "dependencies"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "challenge": {
+      "const": "garment-separation"
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_./-]+$"
+    },
+    "code_license": {
+      "enum": [
+        "MIT",
+        "Apache-2.0",
+        "BSD-2-Clause",
+        "BSD-3-Clause"
+      ]
+    },
+    "outputs": {
+      "const": [
+        "parts.npz"
+      ]
+    },
+    "command": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

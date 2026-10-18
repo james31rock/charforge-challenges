@@ -1,0 +1,7 @@
+{
+  "version": "C8/6",
+  "upstream_sha256": "300ad64c5ef9028b33addb44efbae7be15ccaf863a9b2036d2d90990ad873b24",
+  "vendored_sha256": "7c73e00160f5251812247e6b5bdd9a9eb5551beddab4f594dce45f0cd3081b3f",
+  "decision": "Preserve one active brow; accept physical occlusion only with independent depth proof.",
+  "source_stable_during_snapshot": true
+}

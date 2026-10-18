@@ -1,0 +1,68 @@
+{
+  "kind": "custom",
+  "points": {
+    "hips": "hips",
+    "chest": "chest",
+    "head": "head",
+    "Lhip": "Lhip",
+    "Lknee": "Lknee",
+    "Lankle": "Lankle",
+    "Ltoe": "Ltoe",
+    "Lshoulder": "Lshoulder",
+    "Lelbow": "Lelbow",
+    "Lwrist": "Lwrist",
+    "Rhip": "Rhip",
+    "Rknee": "Rknee",
+    "Rankle": "Rankle",
+    "Rtoe": "Rtoe",
+    "Rshoulder": "Rshoulder",
+    "Relbow": "Relbow",
+    "Rwrist": "Rwrist"
+  },
+  "fingers": {
+    "L": [
+      [
+        "Ldigit0_0",
+        "Ldigit0_1",
+        "Ldigit0_2"
+      ],
+      [
+        "Ldigit1_0",
+        "Ldigit1_1",
+        "Ldigit1_2"
+      ],
+      [
+        "Ldigit2_0",
+        "Ldigit2_1",
+        "Ldigit2_2"
+      ],
+      [
+        "Ldigit3_0",
+        "Ldigit3_1",
+        "Ldigit3_2"
+      ]
+    ],
+    "R": [
+      [
+        "Rdigit0_0",
+        "Rdigit0_1",
+        "Rdigit0_2"
+      ],
+      [
+        "Rdigit1_0",
+        "Rdigit1_1",
+        "Rdigit1_2"
+      ],
+      [
+        "Rdigit2_0",
+        "Rdigit2_1",
+        "Rdigit2_2"
+      ],
+      [
+        "Rdigit3_0",
+        "Rdigit3_1",
+        "Rdigit3_2"
+      ]
+    ]
+  }
+}

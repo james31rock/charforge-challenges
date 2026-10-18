@@ -1,0 +1,16 @@
+{
+  "inspected": true,
+  "method": "Opened full-size generated CPU renders/contact sheets; no continuous-playback claim",
+  "images": {
+    "hand-plant/baseline/review.png": "67c495a4e9e87a62918f9bcbd2c0173bfcd707797a75dcd55fa8739dc844b2bc",
+    "hand-plant/tests/control-review.png": "cdc297d9f5da528e1d776c8f06d9538f493119f2cfeba78ba4e52230d9d4a61f",
+    "one-brow/baseline/review.png": "dde978c872afd8d09dc18cabb6309cb3bf73a251c4023637aee3f1f5a73b91ea",
+    "one-brow/tests/bruno/review.png": "4912669b671d945154d53b8a93fd3d689662fc6befce67a8c27dcdcfd3899211",
+    "garment-separation/baseline/review.png": "3d1f03a150d62e13a52fbab127b249c8b586f5034b346c9845b6c800a49acfc1"
+  },
+  "observations": {
+    "hand-plant": "Failed native support shows pitched palm/fingers and heel-of-hand ground contact. The synthetic control has a flat palm/finger surface; it is a measurement fixture, not a solved character.",
+    "one-brow": "Original raw UV contains brows/eyes; failed composite shows duplicate/static facial ink. Bruno control has no measured static feature ink and single animated brows. Nose/hair/skin fidelity is outside this scoped pass.",
+    "garment-separation": "Fused silhouette has no independent clothes. Colored source parts separate body, closed torso shell and cap hair; the hidden oracle is a simple known mannequin, not biological anatomy."
+  }
+}

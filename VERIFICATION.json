@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "local_only": true,
+  "commits_created": 0,
+  "remote_configured": false,
+  "challenges_built": 3,
+  "scorers_falsified": 3,
+  "paired_positive_controls_passed": 3,
+  "cases": [
+    {
+      "challenge": "hand-plant",
+      "baseline": "FAIL",
+      "control": "PASS",
+      "baseline_report": "hand-plant/baseline/score.json",
+      "control_report": "hand-plant/tests/control-score.json",
+      "baseline_report_sha256": "93e20e31081809b5508ea7667b6e155bb37e713eaa53eb598bdfb741cdedcad9",
+      "control_report_sha256": "8d4c9d4c62c0abd1a7eff864098a5c5c9509d17bd8060c84f49c7fbc1b1f0a8c"
+    },
+    {
+      "challenge": "one-brow",
+      "baseline": "FAIL",
+      "control": "PASS",
+      "baseline_report": "one-brow/baseline/score.json",
+      "control_report": "one-brow/tests/bruno/score.json",
+      "baseline_report_sha256": "b1bc01bedd4a3b62d69ae78fb9287d1407aeb69aefc5d5c4608dab5353a332e6",
+      "control_report_sha256": "b9a1ec3ca62e57b50923200eb4d06d2eff2f15967e7bed090b60306f73066f2b"
+    },
+    {
+      "challenge": "garment-separation",
+      "baseline": "FAIL",
+      "control": "PASS",
+      "baseline_report": "garment-separation/baseline/score.json",
+      "control_report": "garment-separation/tests/good-score.json",
+      "baseline_report_sha256": "cfb416ac2370e2374b7c1b5c6ce6c98f45751ed7f6b6fd84703fdf7e004f3df6",
+      "control_report_sha256": "3387aa0ded30e3ef468630af12f3ac47495ea761fa31f074c99e7a4913946dec"
+    }
+  ],
+  "kernel_tests": {
+    "passed": 3,
+    "coverage": [
+      "all eight C7 failures and incomplete coverage",
+      "duplicate/empty/independently occluded brow controls",
+      "object and NaN NPZ rejection"
+    ]
+  },
+  "extra_garment_hole": "FAIL",
+  "visual_review": "VISUAL-REVIEW.json",
+  "egress": {
+    "text_scan": "clean",
+    "explicit_denylist_terms": 7,
+    "binary_metadata_scan": "clean",
+    "limits": "Pattern/metadata scans plus visual inspection, not semantic proof of every byte"
+  },
+  "studio_verify": {
+    "exit_code": 0,
+    "command": "pnpm studio:verify",
+    "concurrency": 2,
+    "counts": {
+      "tests": 1409,
+      "pass": 1407,
+      "fail": 0,
+      "skipped": 2
+    }
+  },
+  "limitations": [
+    "C7 control is synthetic, not a solved cartwheel",
+    "C8 fixed stepped-camera benchmark; later upstream smooth-camera gate revisions are not silently imported",
+    "Garment uses self-made fallback and public construction oracle; no four-body generalisation claim",
+    "Movie/recipe binding and visual quality need independent review",
+    "MIT code licence and CC0/test-cast asset notices approved for publication"
+  ]
+}

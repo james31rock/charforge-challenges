@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "challenge": "hand-plant",
+  "release_status": "published",
+  "scoring_command": "python score.py <submission>",
+  "baseline": "baseline",
+  "baseline_status": "FAIL",
+  "positive_control": "tests/control-score.json",
+  "core_code_license": "proposed-MIT",
+  "asset_licenses": "assets/LICENSES.md",
+  "presentation_allowed": false
+}

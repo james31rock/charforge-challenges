@@ -1,0 +1,1227 @@
+{
+  "schema_version": "charforge.face.track/1",
+  "fps": 24,
+  "duration_s": 10.0,
+  "frame_count": 240,
+  "exposure_frames": 2,
+  "seed": 1017,
+  "audio_sha256": "7ea2af2f54ffeed05f92ccb1f8498dcbe29c74f6e72568c5b067eeb505bda0be",
+  "phonetic_cues_sha256": "bdb87aeab87f2358e730b58f1e3e1f9069bf7f5001fad9e806c0d3c0296cbd98",
+  "method": "Rhubarb phonetic cues + RMS silence closure; constant exposure holds",
+  "limitations": [
+    "Sung phonemes are approximate; review against audio.",
+    "No OO target in S1: Rhubarb F maps to rounded O."
+  ],
+  "silence_threshold_rms": 0.002116174201576063,
+  "blink_start_frames": [
+    33,
+    113,
+    177
+  ],
+  "expression_changes_s": [
+    3.3,
+    6.6
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 3,
+      "time_s": 0.08333333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 5,
+      "time_s": 0.16666666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 7,
+      "time_s": 0.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 9,
+      "time_s": 0.3333333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 11,
+      "time_s": 0.4166666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 13,
+      "time_s": 0.5,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 15,
+      "time_s": 0.5833333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 17,
+      "time_s": 0.6666666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 19,
+      "time_s": 0.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8333333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 23,
+      "time_s": 0.9166666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 27,
+      "time_s": 1.0833333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1666666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 31,
+      "time_s": 1.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 33,
+      "time_s": 1.3333333333333333,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4166666666666667,
+      "mouth": "closed",
+      "eyes": "closed",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 37,
+      "time_s": 1.5,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 39,
+      "time_s": 1.5833333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 41,
+      "time_s": 1.6666666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 43,
+      "time_s": 1.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8333333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 47,
+      "time_s": 1.9166666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 49,
+      "time_s": 2.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 51,
+      "time_s": 2.0833333333333335,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 53,
+      "time_s": 2.1666666666666665,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 55,
+      "time_s": 2.25,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.007495298600874803,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 57,
+      "time_s": 2.3333333333333335,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.03574819880365036,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 59,
+      "time_s": 2.4166666666666665,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.046606805179539454,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 61,
+      "time_s": 2.5,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.050618334258884845,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 63,
+      "time_s": 2.5833333333333335,
+      "mouth": "mbp",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.023740036560310915,
+      "phonetic_cue": "A"
+    },
+    {
+      "frame": 65,
+      "time_s": 2.6666666666666665,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.00787582033100541,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 67,
+      "time_s": 2.75,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.029897060558261704,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 69,
+      "time_s": 2.8333333333333335,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.047630411656650336,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 71,
+      "time_s": 2.9166666666666665,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.04259285260890332,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 73,
+      "time_s": 3.0,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.031871898086173224,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 75,
+      "time_s": 3.0833333333333335,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.027464737493575052,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 77,
+      "time_s": 3.1666666666666665,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.0172032749734027,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 79,
+      "time_s": 3.25,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "neutral",
+      "expression": "neutral",
+      "rms": 0.012357969178635306,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 81,
+      "time_s": 3.3333333333333335,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.006595029779900473,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 83,
+      "time_s": 3.4166666666666665,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0022929839819316113,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 85,
+      "time_s": 3.5,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.02907270773153283,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 87,
+      "time_s": 3.5833333333333335,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.036849931016346135,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 89,
+      "time_s": 3.6666666666666665,
+      "mouth": "mbp",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.011377904651618559,
+      "phonetic_cue": "A"
+    },
+    {
+      "frame": 91,
+      "time_s": 3.75,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.04998906046153564,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 93,
+      "time_s": 3.8333333333333335,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.03530240966257101,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 95,
+      "time_s": 3.9166666666666665,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.03917822397242679,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 97,
+      "time_s": 4.0,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.04384854891936742,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 99,
+      "time_s": 4.083333333333333,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.022265289548806442,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 101,
+      "time_s": 4.166666666666667,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.004908780568344362,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 103,
+      "time_s": 4.25,
+      "mouth": "o",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.06706685372997684,
+      "phonetic_cue": "F"
+    },
+    {
+      "frame": 105,
+      "time_s": 4.333333333333333,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.08464696806304252,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 107,
+      "time_s": 4.416666666666667,
+      "mouth": "ee",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.03501680893191241,
+      "phonetic_cue": "B"
+    },
+    {
+      "frame": 109,
+      "time_s": 4.5,
+      "mouth": "mbp",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.026434078730656216,
+      "phonetic_cue": "A"
+    },
+    {
+      "frame": 111,
+      "time_s": 4.583333333333333,
+      "mouth": "mbp",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0159240351859641,
+      "phonetic_cue": "A"
+    },
+    {
+      "frame": 113,
+      "time_s": 4.666666666666667,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.004718173963316314,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 115,
+      "time_s": 4.75,
+      "mouth": "closed",
+      "eyes": "closed",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 117,
+      "time_s": 4.833333333333333,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 119,
+      "time_s": 4.916666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 121,
+      "time_s": 5.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 123,
+      "time_s": 5.083333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 125,
+      "time_s": 5.166666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 127,
+      "time_s": 5.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 129,
+      "time_s": 5.333333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 131,
+      "time_s": 5.416666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 133,
+      "time_s": 5.5,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 135,
+      "time_s": 5.583333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 137,
+      "time_s": 5.666666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 139,
+      "time_s": 5.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 141,
+      "time_s": 5.833333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 143,
+      "time_s": 5.916666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 145,
+      "time_s": 6.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 147,
+      "time_s": 6.083333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 149,
+      "time_s": 6.166666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 151,
+      "time_s": 6.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 153,
+      "time_s": 6.333333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 155,
+      "time_s": 6.416666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 157,
+      "time_s": 6.5,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "happy",
+      "expression": "happy",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 159,
+      "time_s": 6.583333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 161,
+      "time_s": 6.666666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 163,
+      "time_s": 6.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 165,
+      "time_s": 6.833333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 167,
+      "time_s": 6.916666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 169,
+      "time_s": 7.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 171,
+      "time_s": 7.083333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 173,
+      "time_s": 7.166666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 175,
+      "time_s": 7.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 177,
+      "time_s": 7.333333333333333,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 179,
+      "time_s": 7.416666666666667,
+      "mouth": "closed",
+      "eyes": "closed",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 181,
+      "time_s": 7.5,
+      "mouth": "closed",
+      "eyes": "half",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 183,
+      "time_s": 7.583333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 185,
+      "time_s": 7.666666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 187,
+      "time_s": 7.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 189,
+      "time_s": 7.833333333333333,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 191,
+      "time_s": 7.916666666666667,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0.0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 193,
+      "time_s": 8.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 195,
+      "time_s": 8.083333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 197,
+      "time_s": 8.166666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 199,
+      "time_s": 8.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 201,
+      "time_s": 8.333333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 203,
+      "time_s": 8.416666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 205,
+      "time_s": 8.5,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 207,
+      "time_s": 8.583333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 209,
+      "time_s": 8.666666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 211,
+      "time_s": 8.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 213,
+      "time_s": 8.833333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 215,
+      "time_s": 8.916666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 217,
+      "time_s": 9.0,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 219,
+      "time_s": 9.083333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 221,
+      "time_s": 9.166666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 223,
+      "time_s": 9.25,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 225,
+      "time_s": 9.333333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 227,
+      "time_s": 9.416666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 229,
+      "time_s": 9.5,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 231,
+      "time_s": 9.583333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 233,
+      "time_s": 9.666666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 235,
+      "time_s": 9.75,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 237,
+      "time_s": 9.833333333333334,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    },
+    {
+      "frame": 239,
+      "time_s": 9.916666666666666,
+      "mouth": "closed",
+      "eyes": "open",
+      "brows": "worried",
+      "expression": "worried",
+      "rms": 0,
+      "phonetic_cue": "X"
+    }
+  ]
+}

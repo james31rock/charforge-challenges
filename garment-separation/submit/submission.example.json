@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "challenge": "garment-separation",
+  "method": "Describe the reusable algorithm and its limitations",
+  "code": "solution.py",
+  "code_license": "MIT",
+  "outputs": [
+    "parts.npz"
+  ],
+  "command": "python solution.py",
+  "dependencies": []
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "height_m": 1.7223659753799438,
+  "units": "metres-z-up",
+  "kind": "self-made clothed test mannequin",
+  "source": "voxel union of original geometric parts",
+  "voxel_pitch_m": 0.006,
+  "oracle": "known construction geometry; not reconstructed biological anatomy"
+}

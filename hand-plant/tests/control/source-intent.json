@@ -1,0 +1,33 @@
+{
+  "fps": 24,
+  "hands": {
+    "L": {
+      "joint": "Lwrist",
+      "intervals": [
+        [
+          0,
+          24
+        ]
+      ],
+      "method": "Original synthetic intended stationary palm support"
+    },
+    "R": {
+      "joint": "Rwrist",
+      "intervals": [
+        [
+          0,
+          24
+        ]
+      ],
+      "method": "Original synthetic intended stationary palm support"
+    }
+  },
+  "feet": {
+    "L": {
+      "intervals": []
+    },
+    "R": {
+      "intervals": []
+    }
+  }
+}

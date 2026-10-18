@@ -1,0 +1,117 @@
+{
+  "status": "FAIL",
+  "challenge": "garment-separation",
+  "submission_sha256": "7921b8290538ad8c686500163fe1d5a679367dc682dcb4f0253b7f3933a098d7",
+  "checks": [
+    {
+      "id": "body.closed",
+      "pass": false,
+      "value": {
+        "vertices": 58404,
+        "triangles": 115938,
+        "boundary_edges": 866,
+        "nonmanifold_edges": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "components": 2,
+        "volume": 0.0704884234269965
+      }
+    },
+    {
+      "id": "body.semantic_surface",
+      "pass": false,
+      "p95_height": 0.03914818890766577,
+      "max_height": 0.060052524118098034,
+      "limits": [
+        0.012,
+        0.035
+      ]
+    },
+    {
+      "id": "body.hidden_completeness",
+      "pass": false,
+      "fraction": 0.874267578125,
+      "worst_height_bin": 0.10211267605633803,
+      "limits": [
+        0.98,
+        0.9
+      ]
+    },
+    {
+      "id": "garment.closed",
+      "pass": true,
+      "value": {
+        "vertices": 1844,
+        "triangles": 3680,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "components": 2,
+        "volume": 0.01187820606265321
+      }
+    },
+    {
+      "id": "garment.semantic_surface",
+      "pass": true,
+      "p95_height": 5.824172666889166e-17,
+      "max_height": 1.4649459363604458e-16,
+      "limits": [
+        0.012,
+        0.035
+      ]
+    },
+    {
+      "id": "hair.closed",
+      "pass": true,
+      "value": {
+        "vertices": 922,
+        "triangles": 1840,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "components": 1,
+        "volume": 0.01595411975708965
+      }
+    },
+    {
+      "id": "hair.semantic_surface",
+      "pass": true,
+      "p95_height": 1.3506659924346969e-16,
+      "max_height": 2.599681657672086e-16,
+      "limits": [
+        0.012,
+        0.035
+      ]
+    },
+    {
+      "id": "silhouette.front",
+      "pass": false,
+      "value": 0.9550439720382936,
+      "minimum": 0.97
+    },
+    {
+      "id": "silhouette.side",
+      "pass": true,
+      "value": 0.9955305923249482,
+      "minimum": 0.97
+    }
+  ],
+  "body_vertical_diagnostic": {
+    "surface_height_coverage_fraction": 0.87890625,
+    "uncovered_height_intervals_fraction": [
+      [
+        0.49609375,
+        0.60546875
+      ],
+      [
+        0.98828125,
+        1.0
+      ]
+    ],
+    "bins": 256,
+    "interpretation": "A gap is missing surface evidence. Full vertical coverage does not prove anatomical completeness."
+  },
+  "scope": "Self-made reconstruction benchmark; sampled surface completeness, not anatomical certification"
+}

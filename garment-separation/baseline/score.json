@@ -1,0 +1,68 @@
+{
+  "status": "FAIL",
+  "challenge": "garment-separation",
+  "submission_sha256": "f180b3fc2a2be9ba6a1d5775e57f3aa82f1495d2fbf63396432fe971c5dcfd42",
+  "checks": [
+    {
+      "id": "body.closed",
+      "pass": true,
+      "value": {
+        "vertices": 76872,
+        "triangles": 153740,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "components": 1,
+        "volume": 0.11180867706281235
+      }
+    },
+    {
+      "id": "body.semantic_surface",
+      "pass": false,
+      "p95_height": 0.02133806645903788,
+      "max_height": 0.0350292446109955,
+      "limits": [
+        0.012,
+        0.035
+      ]
+    },
+    {
+      "id": "body.hidden_completeness",
+      "pass": false,
+      "fraction": 0.7724609375,
+      "worst_height_bin": 0.0,
+      "limits": [
+        0.98,
+        0.9
+      ]
+    },
+    {
+      "id": "garment.present",
+      "pass": false
+    },
+    {
+      "id": "hair.present",
+      "pass": false
+    },
+    {
+      "id": "silhouette.front",
+      "pass": true,
+      "value": 1.0,
+      "minimum": 0.97
+    },
+    {
+      "id": "silhouette.side",
+      "pass": true,
+      "value": 1.0,
+      "minimum": 0.97
+    }
+  ],
+  "body_vertical_diagnostic": {
+    "surface_height_coverage_fraction": 1.0,
+    "uncovered_height_intervals_fraction": [],
+    "bins": 256,
+    "interpretation": "A gap is missing surface evidence. Full vertical coverage does not prove anatomical completeness."
+  },
+  "scope": "Self-made reconstruction benchmark; sampled surface completeness, not anatomical certification"
+}

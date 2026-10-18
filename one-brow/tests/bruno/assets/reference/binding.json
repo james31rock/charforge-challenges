@@ -1,0 +1,347 @@
+{
+  "schema_version": "charforge.face.binding/2",
+  "source_to_front": [
+    [
+      1.074691705845616,
+      -0.0069395568490841,
+      -18.318534465038816
+    ],
+    [
+      -0.002567507121180616,
+      1.0779590450843144,
+      -19.015231142204062
+    ]
+  ],
+  "front_to_source": [
+    [
+      0.9305137229858887,
+      0.005990350847706275,
+      17.159555610700618
+    ],
+    [
+      0.0022163185336375084,
+      0.9276932967246839,
+      17.680902173737106
+    ]
+  ],
+  "source_landmarks": {
+    "eyes": [
+      [
+        203.3395061728395,
+        243.0074074074074
+      ],
+      [
+        308.7307692307692,
+        243.4576923076923
+      ]
+    ],
+    "mouth": [
+      256.94,
+      351.196
+    ],
+    "eye_boxes": [
+      [
+        189,
+        226,
+        30,
+        35
+      ],
+      [
+        294,
+        226,
+        29,
+        35
+      ]
+    ],
+    "mouth_box": [
+      211,
+      346,
+      91,
+      10
+    ],
+    "interocular_px": 105.39126305792973
+  },
+  "mesh_front_landmarks": {
+    "eyes": [
+      [
+        198.52238805970148,
+        242.4147121535181
+      ],
+      [
+        311.7823779193206,
+        242.62951167728238
+      ]
+    ],
+    "mouth": [
+      255.37560975609756,
+      358.9
+    ],
+    "eye_boxes": [
+      [
+        181,
+        223,
+        36,
+        38
+      ],
+      [
+        294,
+        223,
+        35,
+        39
+      ]
+    ],
+    "mouth_box": [
+      207,
+      354,
+      97,
+      10
+    ],
+    "interocular_px": 113.25998985961911
+  },
+  "camera": {
+    "center_x": 0,
+    "center_z": 1.6807771921157837,
+    "span": 0.3791609402371896
+  },
+  "canvas": [
+    512,
+    512
+  ],
+  "atlases": {
+    "base": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/base.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "eye-left": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried",
+        "eyes-half",
+        "eyes-closed"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/eye-left.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "eye-right": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried",
+        "eyes-half",
+        "eyes-closed"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/eye-right.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "brow-left": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/brow-left.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "brow-right": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/brow-right.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "blush-left": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/blush-left.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "blush-right": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried"
+      ],
+      "cols": 4,
+      "rows": 2,
+      "path": "atlases/blush-right.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile_size": [
+        512,
+        512
+      ]
+    },
+    "mouth": {
+      "states": [
+        "expression-determined",
+        "expression-happy",
+        "expression-neutral",
+        "expression-sad",
+        "expression-surprised",
+        "expression-worried",
+        "mouth-closed",
+        "mouth-ee",
+        "mouth-fv",
+        "mouth-lth",
+        "mouth-mbp",
+        "mouth-o",
+        "mouth-small-a",
+        "mouth-wide-a",
+        "morph-d630c2e1f6b6",
+        "morph-0d9dd355eabe",
+        "morph-c8dae2213f9d",
+        "morph-c6d28e4c366e",
+        "morph-256d3173e4e1",
+        "morph-c38baad8a600",
+        "morph-a938d3a0ab12",
+        "morph-6a7f1d5cd1ff",
+        "morph-ca80c58e357a",
+        "morph-4b259f4ecb89",
+        "morph-adb68946d59b",
+        "morph-82edf6ce7b80",
+        "morph-7e4c01f78732",
+        "morph-4ecde2b1b823",
+        "morph-11d782906221",
+        "morph-114fd3b4946c",
+        "morph-5e4765465349",
+        "morph-cd9ef50f1c87",
+        "morph-8ad2bb8f377d",
+        "morph-756ae17a3aac",
+        "morph-83f74c030888",
+        "morph-01cc76db5889",
+        "morph-4fcea86dcc8a",
+        "morph-bb7707a027bc",
+        "morph-6a307a01b307",
+        "morph-da868078044a",
+        "morph-e29370a001e8"
+      ],
+      "cols": 8,
+      "rows": 6,
+      "path": "atlases/mouth.png",
+      "source_rect": [
+        175,
+        318,
+        336,
+        414
+      ],
+      "tile_size": [
+        161,
+        96
+      ]
+    }
+  },
+  "front_direction": [
+    0,
+    -1,
+    0
+  ],
+  "method": "rest-space face UV; invariant feature-free skin; feature-only alpha",
+  "native_closed_expressions": {
+    "eye-left": [],
+    "eye-right": []
+  },
+  "status": "review_required",
+  "visibility_override": "brow-clear.png"
+}
