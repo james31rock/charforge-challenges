@@ -1,18 +1,62 @@
 {
   "schema_version": 1,
-  "release_status": "local-review-only",
+  "release_status": "Public repository; challenge 4 local review pending",
   "files": {
+    ".gitattributes": {
+      "sha256": "e67e271e80ced6db8a28c50ccabd6f504da140b66e2c8efb326c2218d02a6eb9",
+      "bytes": 260
+    },
     ".gitignore": {
       "sha256": "1ccd9a9e5b7dec28bafb5ee7270255e94b65bf025a5f7e25ba65b64eb2eb4f2f",
       "bytes": 54
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "f2d122d2318a20172a9d82104a025d918a15514b9c918d8628b16b834001deca",
+      "bytes": 1657
+    },
+    "LICENSE": {
+      "sha256": "729cec030471b5e50efe3fcf468de9ddc796ed8de79123705966ce95dba19ab9",
+      "bytes": 1079
+    },
+    "LICENSES.md": {
+      "sha256": "bf8bc950066605141745f1821d80d701a014ec8be3646784b60a906fd340374c",
+      "bytes": 1245
+    },
+    "README.md": {
+      "sha256": "b96c8ac0a4fff01b2fd6275074654effc96b3c7555536737ef87ecaacee97103",
+      "bytes": 4112
+    },
+    "SAFETY.md": {
+      "sha256": "a56dd57432e0548a14bda87f28657e790e418fc16825e1bbf2055721e5b33524",
+      "bytes": 1378
+    },
+    "SCOREBOARD.md": {
+      "sha256": "dfc496097bdd99cb23935de484e96c51040ea69ae9375e052528edc61cb6e582",
+      "bytes": 840
+    },
+    "VENDORED.json": {
+      "sha256": "10e8bdb16cc393fd1abfba11db753bb7d9763365fa7b0544e37e58b27ca67cca",
+      "bytes": 1439
+    },
+    "VERIFICATION.json": {
+      "sha256": "b69424711640e09065a6eb572af6e0dfa7bc1f742b05a19dff0946caaf3debbe",
+      "bytes": 223420
+    },
+    "VISUAL-REVIEW.json": {
+      "sha256": "01ce2d352b110096ee654ca88d9894167c084c84852d834060c737c5ff87441c",
+      "bytes": 2867
     },
     "common.py": {
       "sha256": "cbc3cbcf9d36a789afb75b103c10fbe4d6b63d07800215625aca952990ee038f",
       "bytes": 1903
     },
-    "CONTRIBUTING.md": {
-      "sha256": "f2d122d2318a20172a9d82104a025d918a15514b9c918d8628b16b834001deca",
-      "bytes": 1657
+    "garment-separation/README.md": {
+      "sha256": "034958055679a4ffff5f94eb00e6a201bb5f12751619b647160077d8026f4cc0",
+      "bytes": 3125
+    },
+    "garment-separation/assets/LICENSES.md": {
+      "sha256": "ca4b40d50e667a4172706c7fe61057862e89b8524c1133efcfff3d8820fde343",
+      "bytes": 636
     },
     "garment-separation/assets/fixture.json": {
       "sha256": "39a282167579f0da2967e0cf6bdc5eb2c93141af248821e9cc07dd76f1cb7a4b",
@@ -25,10 +69,6 @@
     "garment-separation/assets/fused.obj": {
       "sha256": "f937d0a1ed0140f73ee2309cec30744a683e3ee13c75096bf958c9ea28a8ef1c",
       "bytes": 7901141
-    },
-    "garment-separation/assets/LICENSES.md": {
-      "sha256": "ca4b40d50e667a4172706c7fe61057862e89b8524c1133efcfff3d8820fde343",
-      "bytes": 636
     },
     "garment-separation/assets/notices/original-mannequin/LICENSES.md": {
       "sha256": "0d584a32074209ae8bfa95b063d989e53fa683f124bccd9452054fe9086c85e5",
@@ -57,10 +97,6 @@
     "garment-separation/make_fixture.py": {
       "sha256": "a86515556d73df81c734c18c34e34c2cef09c6b57387f51cb421eef16b747d67",
       "bytes": 2952
-    },
-    "garment-separation/README.md": {
-      "sha256": "034958055679a4ffff5f94eb00e6a201bb5f12751619b647160077d8026f4cc0",
-      "bytes": 3125
     },
     "garment-separation/score.py": {
       "sha256": "29cf948d20506f88ff3fc2705fd1edaa6f58623c1b050b2d5680ab794ab17b0d",
@@ -98,9 +134,21 @@
       "sha256": "f4687b1691da0ee6cce440de679f28b9dcf736c52dd0ec051d6d25e8694fb325",
       "bytes": 3917
     },
+    "grep.exe.stackdump": {
+      "sha256": "3bb2ba8012aa321875f34812c13fcc7440867b180e7fee0c368f3114df23ef1f",
+      "bytes": 1729
+    },
+    "hand-plant/README.md": {
+      "sha256": "08f8295c4c5c6ff79df8ccb51943744c8d9d379b5f09ea248b878d8789b7358a",
+      "bytes": 3206
+    },
     "hand-plant/assets/49_06.bvh": {
       "sha256": "96c742ccc9f412d0d2b3f9d7bb11e6672d99db6c35b093f875fb4b82efa476ce",
       "bytes": 372007
+    },
+    "hand-plant/assets/LICENSES.md": {
+      "sha256": "ef822036f4ef64de4033bc6818e098076dc1490dab6086757f9c2e97769c4600",
+      "bytes": 2268
     },
     "hand-plant/assets/cartwheel.npz": {
       "sha256": "b874515da17432e8d78f3720f55123a92ab5621e6fecedbceb10165cc0cc2c3d",
@@ -109,10 +157,6 @@
     "hand-plant/assets/contact-plan.json": {
       "sha256": "8f6d68889266fbb46aa03487fb13afeb58b1244e1c2e45064c342aa5a8121c6b",
       "bytes": 2540
-    },
-    "hand-plant/assets/LICENSES.md": {
-      "sha256": "ef822036f4ef64de4033bc6818e098076dc1490dab6086757f9c2e97769c4600",
-      "bytes": 2268
     },
     "hand-plant/assets/mapping.json": {
       "sha256": "9f9b828e28ec32f6a914cd80002a46237311e5b9fa46a1b35ee0eb0c46930014",
@@ -162,10 +206,6 @@
       "sha256": "bdba05c1e0aa2c4c91fe2b26534a830a0f55af15c8f918eec34319757a7d8807",
       "bytes": 3117
     },
-    "hand-plant/README.md": {
-      "sha256": "08f8295c4c5c6ff79df8ccb51943744c8d9d379b5f09ea248b878d8789b7358a",
-      "bytes": 3206
-    },
     "hand-plant/render_witness.py": {
       "sha256": "abaa805a5f121fecbd7177a517ec839b562546d7c91df12bedccff4316a6e485",
       "bytes": 2395
@@ -185,6 +225,14 @@
     "hand-plant/submit/submission.schema.json": {
       "sha256": "5990e096b15755b401944162369d9a4a6def799d313900055d73cccc0450f0f9",
       "bytes": 954
+    },
+    "hand-plant/tests/control-review.png": {
+      "sha256": "605c7852ebc757c81d7a21775f95b6157b4bd89e58690abd97d86679fc762116",
+      "bytes": 139824
+    },
+    "hand-plant/tests/control-score.json": {
+      "sha256": "8d4c9d4c62c0abd1a7eff864098a5c5c9509d17bd8060c84f49c7fbc1b1f0a8c",
+      "bytes": 4795
     },
     "hand-plant/tests/control/contact-plan.json": {
       "sha256": "d9e9ee1b61c64aff2ce3270d49351b98958b52d7bd851ad7eab2cfbb09b536b2",
@@ -210,14 +258,6 @@
       "sha256": "a3faf472c1d7859be7abc0eea74f9d44ee20066c0ca98d90d223fc60e57a36be",
       "bytes": 538
     },
-    "hand-plant/tests/control-review.png": {
-      "sha256": "605c7852ebc757c81d7a21775f95b6157b4bd89e58690abd97d86679fc762116",
-      "bytes": 139824
-    },
-    "hand-plant/tests/control-score.json": {
-      "sha256": "8d4c9d4c62c0abd1a7eff864098a5c5c9509d17bd8060c84f49c7fbc1b1f0a8c",
-      "bytes": 4795
-    },
     "hand-plant/tests/make_control.py": {
       "sha256": "310e13d0a397eaf1e7c2a56ec426012029d5e704073345e3d56e4af214969f27",
       "bytes": 5841
@@ -234,13 +274,13 @@
       "sha256": "a414d3debac341b7c6b7da5c3959de2cccfe34caa9438f7a572b53df2b7a2adc",
       "bytes": 3489
     },
-    "LICENSE": {
-      "sha256": "729cec030471b5e50efe3fcf468de9ddc796ed8de79123705966ce95dba19ab9",
-      "bytes": 1079
+    "one-brow/README.md": {
+      "sha256": "fb13a8fd63dbeead62654a7626f6182d87179faad34acf876983a39bf601611c",
+      "bytes": 4380
     },
-    "LICENSES.md": {
-      "sha256": "bf8bc950066605141745f1821d80d701a014ec8be3646784b60a906fd340374c",
-      "bytes": 1245
+    "one-brow/assets/LICENSES.md": {
+      "sha256": "c976401585e5ffd003fda68b7082d5e40e4311c755cefa1ba9dedaccc3e7e3a3",
+      "bytes": 581
     },
     "one-brow/assets/face.blend": {
       "sha256": "0fdef19383986ba2b2b324a179664ecbde880f4a2926931c60e134cab1493348",
@@ -253,10 +293,6 @@
     "one-brow/assets/geometry.npz": {
       "sha256": "5ea4c0e61f21b198c41dee9f8d89af9fbe361a350ba982fd18f1a289ffcbafb4",
       "bytes": 2176048
-    },
-    "one-brow/assets/LICENSES.md": {
-      "sha256": "c976401585e5ffd003fda68b7082d5e40e4311c755cefa1ba9dedaccc3e7e3a3",
-      "bytes": 581
     },
     "one-brow/assets/maps/map-0.npz": {
       "sha256": "a4e76ff9bf43964a7ab91c88798924c6e349cf50f27e21304a950be7c62d94dc",
@@ -374,6 +410,10 @@
       "sha256": "9a45d6edb5021f5de95b19df37809ebe6b783968c5e1a154a958e2106598603a",
       "bytes": 27488
     },
+    "one-brow/baseline/PROVENANCE.md": {
+      "sha256": "b90a905d97eaafbeddcdc012ff2010ab6e1d5a8403d305cad83d1b3790d397e9",
+      "bytes": 474
+    },
     "one-brow/baseline/atlases/base.png": {
       "sha256": "41f2bdfae81feb621c0b080a721154edda4715b392faa15f80b1023f947f8532",
       "bytes": 1764417
@@ -426,10 +466,6 @@
       "sha256": "c61330dfd6f2efd1181d37c1321f80506d1a09c0a494278bd8930cc78a48c279",
       "bytes": 210838
     },
-    "one-brow/baseline/PROVENANCE.md": {
-      "sha256": "b90a905d97eaafbeddcdc012ff2010ab6e1d5a8403d305cad83d1b3790d397e9",
-      "bytes": 474
-    },
     "one-brow/baseline/review.png": {
       "sha256": "dde978c872afd8d09dc18cabb6309cb3bf73a251c4023637aee3f1f5a73b91ea",
       "bytes": 637166
@@ -449,10 +485,6 @@
     "one-brow/challenge.json": {
       "sha256": "73c13e62fb9089cbbbe0a16c28bf490b8436d8b5fefbfb64af20e9ff93e1e827",
       "bytes": 355
-    },
-    "one-brow/README.md": {
-      "sha256": "fb13a8fd63dbeead62654a7626f6182d87179faad34acf876983a39bf601611c",
-      "bytes": 4380
     },
     "one-brow/render.py": {
       "sha256": "989f062ad6f8236932a4ca53df5ca434244f05676a4b8681f33043224e7f1d33",
@@ -658,41 +690,577 @@
       "sha256": "984e4090e395b578607f04155fffaf535721099e68f3c9dd22eedab7d69d620d",
       "bytes": 2336
     },
-    "README.md": {
-      "sha256": "6f8ae3ee9186e5696742bb43c6a9164b43679c732bc2a5cb0cc68f9ca4c9359c",
-      "bytes": 3919
-    },
     "requirements.txt": {
       "sha256": "d248e5a1b25e14c97a746ca44213dd4bb8e96374a9dbcf10b24628dd3fe8979a",
       "bytes": 101
     },
-    "SAFETY.md": {
-      "sha256": "a56dd57432e0548a14bda87f28657e790e418fc16825e1bbf2055721e5b33524",
-      "bytes": 1378
+    "stylised-hair/README.md": {
+      "sha256": "b5d36e585fcf735fe0f931214fea618e5dc05d8f43456bb4c24ccfdbe22f1d94",
+      "bytes": 7014
     },
-    "SCOREBOARD.md": {
-      "sha256": "f1d6c529de56e6e050f7ab8439aacb59217ead3121448b73005b331064963df7",
-      "bytes": 771
+    "stylised-hair/VISUAL-REVIEW.json": {
+      "sha256": "b23736436334a866d1ad7e42a0f6fde67af8453fb21408d60a0228ec900ecf24",
+      "bytes": 1389
+    },
+    "stylised-hair/assets/LICENSES.md": {
+      "sha256": "01c832cfdde7106535a961faa1f1747e46238a083a23d2297e784b10e3162e2a",
+      "bytes": 2079
+    },
+    "stylised-hair/assets/fixture.npz": {
+      "sha256": "1025d3dd7befbe04d05209fa79cc02d1d0b7a2ed38f724a13ac39812055191d1",
+      "bytes": 1433582
+    },
+    "stylised-hair/assets/jump.npz": {
+      "sha256": "901ecf7f6f52fec2fb21f9557335c6514938a38075947fcdda78fc7a0e252fcb",
+      "bytes": 54909204
+    },
+    "stylised-hair/assets/provenance.json": {
+      "sha256": "7e20089c96dfa0f934df003dbe0cc0fbbf20325680486ef7f33437d710cee741",
+      "bytes": 1836
+    },
+    "stylised-hair/assets/walk.npz": {
+      "sha256": "05b7fd09d6abffaa4aca62a2d9f48ce3552050d9133cf79c2fc0bb3e50b9967b",
+      "bytes": 57165053
+    },
+    "stylised-hair/baseline/jump.mp4": {
+      "sha256": "399be62eb395cec0c759fbc8709680ffc25d05233bf58dc0726f1919d79f045f",
+      "bytes": 791738
+    },
+    "stylised-hair/baseline/jump.npz": {
+      "sha256": "c46d6aa8e5627fb8e5cc47b3ab663efb60fdd743b569bc3c89375f2a46ce704b",
+      "bytes": 18782787
+    },
+    "stylised-hair/baseline/rear-review.png": {
+      "sha256": "bf0081beaae95434489ba85d5f09da4d2b1408b170c51587b83f2aca0a6bc6d3",
+      "bytes": 542629
+    },
+    "stylised-hair/baseline/review.png": {
+      "sha256": "f5abfb44cfa7985f36a6e390a6e4072a11b609c45127c0b6987d08625406aa95",
+      "bytes": 639683
+    },
+    "stylised-hair/baseline/score.json": {
+      "sha256": "6320a9e6e521d939f3fb783b0c12a550f6370d8f66ce7d04d4d771503ce23852",
+      "bytes": 9316
+    },
+    "stylised-hair/baseline/walk.mp4": {
+      "sha256": "ea27184e4da6a91206ded39d1ef3d2fa073f9719574d6c16eff9168334a06244",
+      "bytes": 1395189
+    },
+    "stylised-hair/baseline/walk.npz": {
+      "sha256": "a83b43e667da629e85a44a19887c2249c171d823282840b58e786203badc2253",
+      "bytes": 19511865
+    },
+    "stylised-hair/make_control.py": {
+      "sha256": "6b38c2a5202f2846e64c5af2e3531a71d35ce7ff42c8f32ae87425e910bd899e",
+      "bytes": 2653
+    },
+    "stylised-hair/measure.py": {
+      "sha256": "ccc01e7ae9fcb5a23a1009c0e17a2632219c03cb0d04d41e48f1edf25f1fb06f",
+      "bytes": 4959
+    },
+    "stylised-hair/render.py": {
+      "sha256": "b89035132d78df9347631cc6f11518950a1e87dbbe4d32bcd70c85cc6c1079d7",
+      "bytes": 3353
+    },
+    "stylised-hair/score.py": {
+      "sha256": "50720a5a0fd5484ece521c300cdb640ec651aed6c5b00a9474c913dcfba6ced4",
+      "bytes": 1271
+    },
+    "stylised-hair/submit/README.md": {
+      "sha256": "ff63875390c0f4ec88a7431daac362b5537112ad6c1ff4884ea9a3a07394f16e",
+      "bytes": 625
+    },
+    "stylised-hair/test_controls.py": {
+      "sha256": "99220ba3f9e7e90b42bb5a5fe139c978c2490af8de8f1c037a5ae5c606c9224b",
+      "bytes": 2629
+    },
+    "stylised-hair/tests/control/assets/fixture.npz": {
+      "sha256": "0f3692052466cac7f241751d03cc3d4185234c0da480e67fb8784c56e2e27c73",
+      "bytes": 5691
+    },
+    "stylised-hair/tests/control/assets/jump.npz": {
+      "sha256": "dbdc92588c9cc5bdadb1876267bcee134fc52d91e9de6c5406f4268b6170cf43",
+      "bytes": 86270
+    },
+    "stylised-hair/tests/control/assets/walk.npz": {
+      "sha256": "13ebe599904431172876685f6aa659bb1b39938f666afe71860745f22471b95b",
+      "bytes": 130286
+    },
+    "stylised-hair/tests/control/jump.npz": {
+      "sha256": "6acf75b9c3c192c9e60b1763586392e2c99d53bf1f5cb0a3607e9808b5db61a9",
+      "bytes": 146431
+    },
+    "stylised-hair/tests/control/review.png": {
+      "sha256": "bd6cdbed65818df8c60525c33214159d85bce2453b4ee5adade64f338d17aa36",
+      "bytes": 227729
+    },
+    "stylised-hair/tests/control/score.json": {
+      "sha256": "df959e15a99fc4b42fc5a98026380007977e417e5a3701a021dc960604198a73",
+      "bytes": 5023
+    },
+    "stylised-hair/tests/control/walk.npz": {
+      "sha256": "bcb3cbe3f02ca8e1271e1f9530e9f165730b80851d89d448bad57b063c974ef2",
+      "bytes": 135798
     },
     "tests/test_scoring.py": {
       "sha256": "2225e00b61b113a0846868894c43d4240ac1c14a808ae6c45ed04af212a0dd8c",
       "bytes": 3653
     },
-    "VENDORED.json": {
-      "sha256": "10e8bdb16cc393fd1abfba11db753bb7d9763365fa7b0544e37e58b27ca67cca",
-      "bytes": 1439
+    "toolkit/.gitignore": {
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "bytes": 19
     },
-    "VERIFICATION.json": {
-      "sha256": "2131f6e0faec895dbe412e594996727e9703be9a5f13d25474eee0314967d44e",
-      "bytes": 2629
+    "toolkit/IMPORTS.json": {
+      "sha256": "9f125af5c48c7ec3c71ed21d0f3cf64bb2806bc5b01382170e7b29000fa91942",
+      "bytes": 42423
+    },
+    "toolkit/LICENSES.md": {
+      "sha256": "c92f9a371bf6b10e0deea383a944fd96c4fcab4ae3e6ffba55fb68adddd5d6eb",
+      "bytes": 3392
+    },
+    "toolkit/MANIFEST.json": {
+      "sha256": "c85df843f4e34514016d76ff9d4d337032d4dc5b8e4c87158dbe19870c36562a",
+      "bytes": 10844
+    },
+    "toolkit/README.md": {
+      "sha256": "3372ece5f897c931b78f6286d0b04db28b1d1abd0b9761f74a44ad5662c48061",
+      "bytes": 4517
+    },
+    "toolkit/SOURCE-MAP.json": {
+      "sha256": "fd0ececcb2c99adfacefb827df140f9b652bb2abac242c810ddd3ae83b4f0728",
+      "bytes": 23877
+    },
+    "toolkit/VERIFICATION.json": {
+      "sha256": "82a98a8741c6927d1bf394df92c8dff8e3920ade2b2e8bd722ca88f3c4609824",
+      "bytes": 1480
+    },
+    "toolkit/__init__.py": {
+      "sha256": "96127eb02ddb6e0d2e4f7d6c2926f477023c0fbba578ca8df9b674c76756750e",
+      "bytes": 65
+    },
+    "toolkit/face/README.md": {
+      "sha256": "4172d81246a1b19809fbe73ea615d5b5302b8af6d6a603c24f6d399db0e6ae9d",
+      "bytes": 3699
+    },
+    "toolkit/face/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/face/blender_face.py": {
+      "sha256": "40fd203e093e346a79d6d92b6f8b1097db21b52a43e4725f68bc51b504d7a573",
+      "bytes": 15609
+    },
+    "toolkit/face/c8_gate.py": {
+      "sha256": "710ed2dbcb6dff007a1a204e7d2fe91c4a669f9e8eb46b68fb65659dae80d009",
+      "bytes": 17962
+    },
+    "toolkit/face/erase_static.py": {
+      "sha256": "7aed040b9528c0a7031a79bc93ef17e8095eab701c4709737da012fb452dc136",
+      "bytes": 9814
+    },
+    "toolkit/face/hair_gate.py": {
+      "sha256": "400aa5151340f5c0f8a0a02d1ff3a950036d1e586982a96a59d52353ae74558f",
+      "bytes": 2548
+    },
+    "toolkit/face/hair_masks.py": {
+      "sha256": "fb13b84a48391ca39979c58a2fb6bc216aea2320d5c59ae3565a1263d15ecf02",
+      "bytes": 3532
+    },
+    "toolkit/face/inpaint_skin.py": {
+      "sha256": "cbb8b07eb4b0e96ce03f385f534ef135d2a3de08e700484a34393e75ff36a1f1",
+      "bytes": 1339
+    },
+    "toolkit/face/inspect_mesh.py": {
+      "sha256": "166c4e8a87f6f3b64cc58e054a35109cfd5b9fff6e764e56df1c3e23ff825424",
+      "bytes": 2372
+    },
+    "toolkit/face/layers.py": {
+      "sha256": "3586063b76830c941091ec904834021db83ae432bfea4ed8304a8e3ba0ff21d4",
+      "bytes": 9364
+    },
+    "toolkit/face/matte_v2.py": {
+      "sha256": "790bb6e2fab1ea5bd5a90ddba7e7d5aececaf4c016442360b77f2745a72de707",
+      "bytes": 11429
+    },
+    "toolkit/face/mouth_likeness.py": {
+      "sha256": "31a17abf790a33450a3e11813b42e231a61cb08226a40d1488d989c50efc0227",
+      "bytes": 6110
+    },
+    "toolkit/face/mouth_morph.py": {
+      "sha256": "6ec364a36b86c495207f413c1ea9f49ed1ddb9a8d88d6076ba75cd757d53c65d",
+      "bytes": 4792
+    },
+    "toolkit/face/mouth_transport.py": {
+      "sha256": "ccc7809d5828119d68847d185b6740514912dec57f5fad08d0ead9c89e47a2fc",
+      "bytes": 6135
+    },
+    "toolkit/face/raster.py": {
+      "sha256": "3ecb2d0c9a876e8f0629a65479b8e6958a0f7f94bae30fd81b6f832804166690",
+      "bytes": 4350
+    },
+    "toolkit/face/s5.schema.json": {
+      "sha256": "28a97db08ac2834220cbe0e920c842e019338d68b8a2478bc695b42ba992e712",
+      "bytes": 3979
+    },
+    "toolkit/face/surface.py": {
+      "sha256": "157cea1cc4c4d88fa8c4296009f2284f530c8e7fb3f177579fe17e9d47808821",
+      "bytes": 9325
+    },
+    "toolkit/face/test_c8.py": {
+      "sha256": "849d94b7f097615eb2cd6c253f0daedb83226ca1a9deca7072528181ee6bd137",
+      "bytes": 6726
+    },
+    "toolkit/face/test_face.py": {
+      "sha256": "807cda83ec642571535b0e8688e9eacf740e53b2f7d025d333781d92390792dc",
+      "bytes": 6891
+    },
+    "toolkit/face/timing.py": {
+      "sha256": "5e09cc594a21aa153adb98f1be248cc0878a6bb74cffed0b47ee1d9ca67e80ee",
+      "bytes": 3003
+    },
+    "toolkit/face/timing_v2.py": {
+      "sha256": "e380972db75329310647a049dbf544c3dc6ae22f229957ef5104683701dd42fb",
+      "bytes": 1877
+    },
+    "toolkit/gait/README.md": {
+      "sha256": "4bc9fe0a6994eaf653ddd11d1ee84ddfded49912a21f8ace524daa3231633a21",
+      "bytes": 1708
+    },
+    "toolkit/gait/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/gait/__main__.py": {
+      "sha256": "31d1fc97d1ce486375405f605667ed0cd279b1ff883075761bbc0653e905f5b6",
+      "bytes": 605
+    },
+    "toolkit/gait/core.py": {
+      "sha256": "78dc813aa37f365af284c1de9455c29aa9400bf410e27df103e1baa63b906c5d",
+      "bytes": 12197
+    },
+    "toolkit/gait/naturalness.py": {
+      "sha256": "3f45a6a3c07120f6a4384380aa0281357eb1de39025086663496c5239e006a86",
+      "bytes": 10126
+    },
+    "toolkit/gait/test_core.py": {
+      "sha256": "12352fed897c87c46a939fddf4e40cbc676da01346850e980048b3be5bedd98d",
+      "bytes": 5305
+    },
+    "toolkit/gait/test_naturalness.py": {
+      "sha256": "169d1bcd6b3406e9fb462f49e1f312d8abbccf1f3fc0869ce7a711d010ebbd86",
+      "bytes": 3780
+    },
+    "toolkit/gait/trace.schema.json": {
+      "sha256": "2620a86af8d011010c4178967ddc775535a144b42994d979e3a4b77fc47d294a",
+      "bytes": 3095
+    },
+    "toolkit/layers/README.md": {
+      "sha256": "a6093e750f1ad7dbae4b4b4a1ef80337e6abe052fb46b7701dfd8c78d2023c99",
+      "bytes": 2154
+    },
+    "toolkit/layers/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/layers/body-proxy.schema.json": {
+      "sha256": "bd0105e6777a2c7d5cc8984f605aa0e3ad315ad5045592720ab8a1c7458720b0",
+      "bytes": 2188
+    },
+    "toolkit/layers/core.py": {
+      "sha256": "a3bcda628d862c150be2eced2b08c795878aa7ce858a63a012263d1762060534",
+      "bytes": 3833
+    },
+    "toolkit/layers/fit.py": {
+      "sha256": "918b3b5bc0f7d885e32e2d0898d597e0f6a0b596878fe3de2cddbdd944584ba5",
+      "bytes": 28946
+    },
+    "toolkit/layers/layers.schema.json": {
+      "sha256": "270caada7fadbe96f3bb201f9acc028f470dab0b019687217a56d9f1cc5a3574",
+      "bytes": 3571
+    },
+    "toolkit/layers/test_core.py": {
+      "sha256": "f9555bf334cde942111b35a7faf9a502a10295e8b5806703ea8912bc927a4718",
+      "bytes": 2374
+    },
+    "toolkit/preflight/FAILURE-PATTERNS.json": {
+      "sha256": "7fe88e3cb2d3d7eac4035bcc5f385c412ef0474f9cc9560efce3ca2a75f05cc5",
+      "bytes": 4916
+    },
+    "toolkit/preflight/FAILURE-PATTERNS.md": {
+      "sha256": "08dfdf302f824db1d7fa77c2526404ab96e9a17b22e4e3cb64260281966f3e3f",
+      "bytes": 4195
+    },
+    "toolkit/preflight/README.md": {
+      "sha256": "0f734706821334581cb4b8a685a56f431f33116897d1b7751966816f16ce10d9",
+      "bytes": 1421
+    },
+    "toolkit/preflight/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/preflight/preflight.py": {
+      "sha256": "a1d3096982950ab02388a68f1a03e30e38cdb003a9fc5c2bfb7149aefefdd1ac",
+      "bytes": 46333
+    },
+    "toolkit/qa/README.md": {
+      "sha256": "a21ca1563dc79f787d96643d9e9175177c7c6eb5c416baefe6556afa9035f3bd",
+      "bytes": 3023
+    },
+    "toolkit/qa/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/qa/__main__.py": {
+      "sha256": "2e77c9fc1cc30602819acd1fd1d3c34578c82383614ea14e6480872a4f98167b",
+      "bytes": 682
+    },
+    "toolkit/qa/core.py": {
+      "sha256": "39039887363e5304e623fa231d38337a5ab41e8f3221dc68773ad82f0a804720",
+      "bytes": 18717
+    },
+    "toolkit/qa/geometry.py": {
+      "sha256": "8e3205ba425a4a0c62dc3350c133b2b9c7a9ae6d2d1d12222ecc6ddfb927db24",
+      "bytes": 5237
+    },
+    "toolkit/qa/hair.py": {
+      "sha256": "fd6ce2bc377f33dabbf6f56620c9a6b5ad5c64db8cf5cccd86d5934f0347f42e",
+      "bytes": 1202
+    },
+    "toolkit/qa/hands.py": {
+      "sha256": "b5971eb963b3ed79a070b63ac9306b129ff5d1cbd9da6771536b04feef47dab8",
+      "bytes": 9800
+    },
+    "toolkit/qa/make_c7_fixture.py": {
+      "sha256": "a78d0e37347e18ec1b8424b460616a8b82d5581c4f51143868d570e2ad2d0fc6",
+      "bytes": 6323
+    },
+    "toolkit/qa/make_falsifier.py": {
+      "sha256": "9198614ba564ce2554de51bbde3084af779e981225b8147938a1d3307996502f",
+      "bytes": 4517
+    },
+    "toolkit/qa/report.schema.json": {
+      "sha256": "564aa229635bdd94865dd0e9502678052282dae9086152f260c9fd47376fe106",
+      "bytes": 2010
+    },
+    "toolkit/qa/test_core.py": {
+      "sha256": "b76cf36f1a0c5b6bacff63807208e1416df0964385a871c7dfc76db48866a222",
+      "bytes": 8126
+    },
+    "toolkit/qa/test_hands.py": {
+      "sha256": "353494422074e6bf24429299e7a729895c922d58b94a10cc4febc85551f704d8",
+      "bytes": 7383
+    },
+    "toolkit/qa/trace.schema.json": {
+      "sha256": "4ba87f81b895ccbf902a2d1748c6793c98d7ef4ba0d2901d8cdc3ddf1014882e",
+      "bytes": 6407
+    },
+    "toolkit/requirements-face.txt": {
+      "sha256": "a2d70dceb16b17fb5492b8532e1c330425bf790a6fda435991546a8ec0cc2036",
+      "bytes": 99
+    },
+    "toolkit/requirements.txt": {
+      "sha256": "8776500c06aa4fd40d23e1659022ca10c401a182d65447d2eb58a80ded87b455",
+      "bytes": 71
+    },
+    "toolkit/rig/README.md": {
+      "sha256": "dab6c1f86795c11820e994e97b2cf8e0d8fe72d7bbfd23676453bde55c4cf5bd",
+      "bytes": 2909
+    },
+    "toolkit/rig/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/rig/blender_rig.py": {
+      "sha256": "c9b655b70da9736542249f1a974e26651e15f4d8e137d6f4e003d696788116f8",
+      "bytes": 15451
+    },
+    "toolkit/rig/foot_math.py": {
+      "sha256": "ab4e001c2e263f5cacbdd507d20b17d28df8bf6f68caed8297beeb472350bf7e",
+      "bytes": 2352
+    },
+    "toolkit/rig/gait_plan.schema.json": {
+      "sha256": "56ad1ae7d4bf87e4e3dbd1d7c592ac590c774b2fdf6a751be61afde4be2c9f03",
+      "bytes": 5215
+    },
+    "toolkit/rig/gait_planning.py": {
+      "sha256": "6af4c9f4fa7a3a0cd4a0fd227de601af1295fb4e4299e47a152039497f53aa42",
+      "bytes": 7298
+    },
+    "toolkit/rig/geometry.py": {
+      "sha256": "2da9d1de0824bbf946adb8985c137ea7a688022172a6c5eafeed006640d8a2b6",
+      "bytes": 25493
+    },
+    "toolkit/rig/math_core.py": {
+      "sha256": "c341cba2c61f92781c89a973ab4fcd2cc9b220e11de3d9fd972693f41f88a337",
+      "bytes": 5334
+    },
+    "toolkit/rig/measurement.schema.json": {
+      "sha256": "62b5ba0d693a2156abc6151bb2879c01bea49baf1ed3bf05b46bca73014a73dc",
+      "bytes": 2486
+    },
+    "toolkit/rig/natural_gait.py": {
+      "sha256": "1c93e0476886460e4e5c61d9ef1f7e0b2d80005943315b88542f752f22c433f2",
+      "bytes": 2501
+    },
+    "toolkit/rig/rig.schema.json": {
+      "sha256": "966737ed8366fcf409eb34dfd820e83cce88b8f609a1883e6714e63e81553779",
+      "bytes": 3491
+    },
+    "toolkit/rig/silhouette.py": {
+      "sha256": "402134db96aeef3c61e5e1fe82896142e608231d350e6d5f79ba3f16e21bed64",
+      "bytes": 3128
+    },
+    "toolkit/rig/test_foot_math.py": {
+      "sha256": "304e4589f42af68e7f37d99b1cb54d53ca271d6b1c5070e63e1c3e8f47ee55c4",
+      "bytes": 1537
+    },
+    "toolkit/rig/test_gait_planning.py": {
+      "sha256": "45b1a437734f14d3503ff3afb60cefb7256c8feba334e36bbfb4501cf89346fa",
+      "bytes": 2320
+    },
+    "toolkit/rig/test_geometry.py": {
+      "sha256": "3c4ad69041ac070791143b4b661eee1bcc3bcb3abff752c6ed3cdf07e09ce619",
+      "bytes": 8517
+    },
+    "toolkit/rig/test_math.py": {
+      "sha256": "b2f0d6faa6594eb880b4be26267726475f15c322b8fa13606701176c3ac63dee",
+      "bytes": 4881
+    },
+    "toolkit/rig/test_natural_gait.py": {
+      "sha256": "a632845dc0998c6b4ef8931c1d9c922f20b93b7bec4c4b3be141d4fc43a06935",
+      "bytes": 2127
+    },
+    "toolkit/rig/test_silhouette.py": {
+      "sha256": "96975438cfd7bf38070d9c0ae83dacae204f91e3e3a416dcac6219d86f2c3adb",
+      "bytes": 1154
+    },
+    "toolkit/rig/test_swing_clearance.py": {
+      "sha256": "0528d11f6626c440dd536596ddc565632fe9c0d606b0d76c3125495e7d320539",
+      "bytes": 1235
+    },
+    "toolkit/rig/weights.py": {
+      "sha256": "08af7dcc4d9222d82e21debfa87cfe0555177df2477e1646dd0327f721a14464",
+      "bytes": 5906
+    },
+    "toolkit/runtime.py": {
+      "sha256": "d4a1e88c179c9f5cdd511ffd8d7b4b2ea3d9e9085d286a7486a528eb66a72d4f",
+      "bytes": 820
+    },
+    "toolkit/secondary/README.md": {
+      "sha256": "072bfd1c230a90c9e90b439a89143658e6f3df72ef1a871a6015def9dc55869c",
+      "bytes": 2101
+    },
+    "toolkit/secondary/__init__.py": {
+      "sha256": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
+      "bytes": 34
+    },
+    "toolkit/secondary/hair_profiles.json": {
+      "sha256": "14d9a0a103b4ff3f403c97c3e8d1c6670f44310f2ad9939fc32c1a3c5fef7602",
+      "bytes": 517
+    },
+    "toolkit/secondary/manifest.schema.json": {
+      "sha256": "f92f6ed16f29a8a12e393e516e4674e68589491197ff8dd63476e4203002efca",
+      "bytes": 3712
+    },
+    "toolkit/secondary/physics.py": {
+      "sha256": "36bbbc2209cf7386135faf0147dbdb0eadc8c2f9c520b8a9ad5858f745193e34",
+      "bytes": 11459
+    },
+    "toolkit/secondary/presets.json": {
+      "sha256": "b1920ca05087187ad94c830a3241355cd31186e571386f639faa42bbf565566f",
+      "bytes": 4302
+    },
+    "toolkit/secondary/secondary.schema.json": {
+      "sha256": "9aedfd267e52b78a4413cf628f93ca235bc9ea290f0053d4f6d1bc5ac8243fa9",
+      "bytes": 4189
+    },
+    "toolkit/secondary/test_hair.py": {
+      "sha256": "21f26691005ce2a9e3720c2bf217095d7065b6a03b8c639f48cd453ca5681c29",
+      "bytes": 2332
+    },
+    "toolkit/secondary/test_physics.py": {
+      "sha256": "57fba93320fa57bd55d059a0c886bbfe82043b75d0790136f09e4fe20b5cd5ee",
+      "bytes": 4798
+    },
+    "toolkit/secondary/topology.py": {
+      "sha256": "e1f2eba36f19c78fb477a2aefe34dd4d9bca406aaa3db61faa1a64454093c8ca",
+      "bytes": 1413
+    },
+    "toolkit/skills/README.md": {
+      "sha256": "99d7caf6907770633d750df87e6c5c2ffe8fbac2ece968094de4029464d642d4",
+      "bytes": 2002
+    },
+    "toolkit/skills/charforge-acceptance/SKILL.md": {
+      "sha256": "117d75294da4e8bbc69b9f1b0981fc361022bc1957809e59d1c2cbb764822c55",
+      "bytes": 1168
+    },
+    "toolkit/skills/charforge-export/SKILL.md": {
+      "sha256": "96e8f33c2e41595a34445373d4352b53f02ee5e5e344d5a4ba501e3c9dc7137f",
+      "bytes": 1262
+    },
+    "toolkit/skills/charforge-face/SKILL.md": {
+      "sha256": "7d92a95c932a8d0f1d33eb63e570f50679bbc39013a3bb88b819f351aaea4b37",
+      "bytes": 1115
+    },
+    "toolkit/skills/charforge-gait-compare/SKILL.md": {
+      "sha256": "cdf6793eeafb94383c672cdee6fb9e2af8d8ad106f41a45a67ac8f5ed32c1fb0",
+      "bytes": 1005
+    },
+    "toolkit/skills/charforge-intake/SKILL.md": {
+      "sha256": "68d8048f4c7fb3b69110e21d30fa89b26879f408d6a43da4284d8f2c352de941",
+      "bytes": 1223
+    },
+    "toolkit/skills/charforge-layers/SKILL.md": {
+      "sha256": "0a552ad337ef06bf254ccb818c86c2ca852df0d7828375adce1773e38fdc0694",
+      "bytes": 1090
+    },
+    "toolkit/skills/charforge-mesh-qa/SKILL.md": {
+      "sha256": "2e09e6893ee8e206e7f1c5d5e4f36159d9cb4963cb1ab7762e6c5dd7a94110a5",
+      "bytes": 1069
+    },
+    "toolkit/skills/charforge-mesh/SKILL.md": {
+      "sha256": "801d265af56ebe416ee7107fd865fe28280a7fc18bef90160d4ed5ce4d80aa6b",
+      "bytes": 1081
+    },
+    "toolkit/skills/charforge-motion/SKILL.md": {
+      "sha256": "f1aaad98c0736082d70d5212cae1b6e7945f575fa19197aef4c94f03553a9f5a",
+      "bytes": 1166
+    },
+    "toolkit/skills/charforge-preflight/SKILL.md": {
+      "sha256": "7722dd0371251d9a26d0a954db2f17f184a36f90161851a22121802fa19c8d52",
+      "bytes": 969
+    },
+    "toolkit/skills/charforge-rig/SKILL.md": {
+      "sha256": "0a4ec01290124cd75b08925c6e3b9fbffe4917e9a9d3696ab0b0213214804630",
+      "bytes": 1011
+    },
+    "toolkit/skills/charforge-secondary/SKILL.md": {
+      "sha256": "3fd861231b2f1405951f748318334acc2340910f8ac9057c44a14ff2da6b00e6",
+      "bytes": 1171
+    },
+    "toolkit/skills/charforge-views-faces/SKILL.md": {
+      "sha256": "80f60b2ab56809885aa84811851514816ebadf2292e482e51faf6d14107ab319",
+      "bytes": 1304
+    },
+    "toolkit/skills/charforge/SKILL.md": {
+      "sha256": "691291bde0643aff38fa2db16b767eee898a6b2f5b733b3d4bd8b126e97758cb",
+      "bytes": 1592
+    },
+    "toolkit/tests/__init__.py": {
+      "sha256": "3a45f5a2d61414aa6fa2a21870419584701632a280eb3f661c697aae4a7aea4c",
+      "bytes": 74
+    },
+    "toolkit/tests/blender_smoke.py": {
+      "sha256": "c1482263f1b753615113d1666ab11ac20567f6714e2c177cbd4fc6317935b2ae",
+      "bytes": 4214
+    },
+    "toolkit/tests/test_public_assets.py": {
+      "sha256": "8487e388bae35635161a7e4ea4c8ea4e08bb8bdfb2c57f603459126dca1c3597",
+      "bytes": 8936
     },
     "verify.py": {
-      "sha256": "981d2a52d5a656f0ee78ab616ef8e4bd09b14b6f4066444d092dacd903d1640f",
-      "bytes": 1464
-    },
-    "VISUAL-REVIEW.json": {
-      "sha256": "ea6701144e98c8672d55c5e763bde2fd0a63d172b31582d386f3b49433d1b91a",
-      "bytes": 1382
+      "sha256": "71190f8b9b8e8b6a5b33264b8f373f16f997a79738de4edc659e5332c17c2a10",
+      "bytes": 1558
     }
   }
 }

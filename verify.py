@@ -1,10 +1,11 @@
-"""Reproduce the six paired baseline/control results without executing entries."""
+"""Reproduce the eight paired baseline/control results without executing entries."""
 import argparse,json,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 CASES=[('hand-plant','baseline/motion.npz',[],1),('hand-plant','tests/control/poses.npz',['--control'],0),
        ('one-brow','baseline',[],1),('one-brow','tests/bruno',['--control-bruno'],0),
-       ('garment-separation','baseline/parts.npz',[],1),('garment-separation','tests/good.npz',[],0)]
+       ('garment-separation','baseline/parts.npz',[],1),('garment-separation','tests/good.npz',[],0),
+       ('stylised-hair','baseline',[],1),('stylised-hair','tests/control',['--control'],0)]
 def main():
     p=argparse.ArgumentParser();p.add_argument('--json');a=p.parse_args();rows=[]
     for name,path,flags,expected in CASES:

@@ -10,6 +10,7 @@ beat the baseline, and send a PR.
 | [Hand plant](hand-plant/README.md) | pixiv native skinned rig + CMU 49_06 | Flat, stable anatomical palm support | Native Blender skin measurements |
 | [One brow per side](one-brow/README.md) | Pippa test head + layered face | Remove static duplicate ink, preserve one readable feature | C8/6 pixels plus independent static/expression renders |
 | [Garment separation](garment-separation/README.md) | Self-made fused clothed mannequin | Closed body, garment and hair with hidden-body completion | Topology, known-body distance, silhouette IoU |
+| [Stylised hair physics](stylised-hair/README.md) | Pippa bob + CMU-derived walk/jump | Visible sway without body clipping or clumping | Toolkit C2 surface depth, response and strip spacing |
 
 ## Setup
 

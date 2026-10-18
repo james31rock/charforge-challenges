@@ -24,3 +24,10 @@ Exit 0 = PASS, 1 = FAIL, 3 = BLOCKED. The trace must contain full-rate consecuti
 The public hand challenge's `extract.py` measures fixed skin patches from its native rig; the integration test feeds those traces through the exported C7 evaluator and checks both baseline and control. General C1–C6 native extraction is deliberately an adapter contract: supply measured geometry fields, semantic part labels and coverage flags. No hidden rig adapter or motion cache is required by the numerical package.
 
 Missing closed volumes, unknown contact intent, unexcited hair or absent calibration block acceptance. Finite samples cannot prove that all triangles never collide; static support is not dynamic balance. C5 stretch is not silhouette approval. Inspect worst-frame images separately.
+
+`hair.strip_spacing` adds provisional material-patch spacing guards for challenge
+4. Variance, minimum and maximum normalized spacing are all required: variance
+alone cannot reject uniform collapse. The headless adapter in
+`stylised-hair/measure.py` measures geometry before invoking C2; entrants submit
+coordinates, not self-reported metrics. The synthetic positive control does not
+certify the real character or calibrate these spacing bands on professional rigs.

@@ -1,0 +1,156 @@
+{
+  "schema": "hair-challenge-score/1",
+  "status": "PASS",
+  "clips": {
+    "walk": {
+      "status": "PASS",
+      "frames": 97,
+      "checks": [
+        {
+          "id": "C2.hair_penetration",
+          "status": "PASS",
+          "value": 0.0,
+          "threshold": 0.0005,
+          "unit": "m",
+          "frames": [],
+          "detail": "Hair below root exclusion against body/arms."
+        },
+        {
+          "id": "C2.hair_response",
+          "status": "PASS",
+          "value": 0.08957409714449278,
+          "threshold": 0.01,
+          "unit": "s\u00b2",
+          "frames": [],
+          "detail": "Relative tip range / RMS head acceleration. Provisional expressive-hair band; insufficient excitation is unavailable."
+        },
+        {
+          "id": "C2.strip_spacing_variance",
+          "status": "PASS",
+          "value": 4.754295634144491e-32,
+          "threshold": 0.04,
+          "unit": "ratio\u00b2",
+          "frames": []
+        },
+        {
+          "id": "C2.strip_spacing_minimum",
+          "status": "PASS",
+          "value": 0.9999999999999998,
+          "threshold": 0.65,
+          "unit": "ratio",
+          "frames": []
+        },
+        {
+          "id": "C2.strip_spacing_maximum",
+          "status": "PASS",
+          "value": 1.0000000000000004,
+          "threshold": 1.6,
+          "unit": "ratio",
+          "frames": []
+        },
+        {
+          "id": "C2.root_attachment",
+          "status": "PASS",
+          "value": 0.0,
+          "threshold": 0.001,
+          "unit": "m"
+        },
+        {
+          "id": "C2.bounded_excursion",
+          "status": "PASS",
+          "value": 0.024993039045434845,
+          "threshold": 0.35,
+          "unit": "m"
+        }
+      ],
+      "tip_amplitude_m": 0.04998607809086968,
+      "head_acceleration_rms_m_s2": 0.5580416625381854,
+      "worst_depth_frame": 1
+    },
+    "jump": {
+      "status": "PASS",
+      "frames": 97,
+      "checks": [
+        {
+          "id": "C2.hair_penetration",
+          "status": "PASS",
+          "value": 0.0,
+          "threshold": 0.0005,
+          "unit": "m",
+          "frames": [],
+          "detail": "Hair below root exclusion against body/arms."
+        },
+        {
+          "id": "C2.hair_response",
+          "status": "PASS",
+          "value": 0.05732742217247535,
+          "threshold": 0.01,
+          "unit": "s\u00b2",
+          "frames": [],
+          "detail": "Relative tip range / RMS head acceleration. Provisional expressive-hair band; insufficient excitation is unavailable."
+        },
+        {
+          "id": "C2.strip_spacing_variance",
+          "status": "PASS",
+          "value": 4.754295634144491e-32,
+          "threshold": 0.04,
+          "unit": "ratio\u00b2",
+          "frames": []
+        },
+        {
+          "id": "C2.strip_spacing_minimum",
+          "status": "PASS",
+          "value": 0.9999999999999998,
+          "threshold": 0.65,
+          "unit": "ratio",
+          "frames": []
+        },
+        {
+          "id": "C2.strip_spacing_maximum",
+          "status": "PASS",
+          "value": 1.0000000000000004,
+          "threshold": 1.6,
+          "unit": "ratio",
+          "frames": []
+        },
+        {
+          "id": "C2.root_attachment",
+          "status": "PASS",
+          "value": 0.0,
+          "threshold": 0.001,
+          "unit": "m"
+        },
+        {
+          "id": "C2.bounded_excursion",
+          "status": "PASS",
+          "value": 0.03998886247269576,
+          "threshold": 0.35,
+          "unit": "m"
+        }
+      ],
+      "tip_amplitude_m": 0.0799777249453915,
+      "head_acceleration_rms_m_s2": 1.3951041563454645,
+      "worst_depth_frame": 1
+    }
+  },
+  "code_sha256": {
+    "toolkit/qa/core.py": "39039887363e5304e623fa231d38337a5ab41e8f3221dc68773ad82f0a804720",
+    "toolkit/qa/geometry.py": "8e3205ba425a4a0c62dc3350c133b2b9c7a9ae6d2d1d12222ecc6ddfb927db24",
+    "toolkit/qa/hair.py": "fd6ce2bc377f33dabbf6f56620c9a6b5ad5c64db8cf5cccd86d5934f0347f42e",
+    "stylised-hair/measure.py": "ccc01e7ae9fcb5a23a1009c0e17a2632219c03cb0d04d41e48f1edf25f1fb06f"
+  },
+  "fixed_sha256": {
+    "fixture.npz": "0f3692052466cac7f241751d03cc3d4185234c0da480e67fb8784c56e2e27c73",
+    "walk.npz": "13ebe599904431172876685f6aa659bb1b39938f666afe71860745f22471b95b",
+    "jump.npz": "dbdc92588c9cc5bdadb1876267bcee134fc52d91e9de6c5406f4268b6170cf43"
+  },
+  "submission_sha256": {
+    "walk.npz": "bcb3cbe3f02ca8e1271e1f9530e9f165730b80851d89d448bad57b063c974ef2",
+    "jump.npz": "6acf75b9c3c192c9e60b1763586392e2c99d53bf1f5cb0a3607e9808b5db61a9"
+  },
+  "limitations": [
+    "Sampled fixed hair vertices versus closed body envelopes; not continuous triangle collision certification.",
+    "Strip spacing bands are provisional shape guards, not professional-rig calibration or a visual certificate."
+  ],
+  "scope": "synthetic-control"
+}

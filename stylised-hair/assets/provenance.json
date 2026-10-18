@@ -1,0 +1,46 @@
+{
+  "schema": "hair-assets/1",
+  "prepared": "2026-10-18",
+  "character": "Pippa",
+  "height_cm": 105,
+  "public_character_notice": "../../one-brow/assets/LICENSES.md",
+  "clips": {
+    "walk": {
+      "source": "CMU",
+      "clip": "08_03",
+      "description": "walk",
+      "url": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/008/08_03.bvh",
+      "sha256": "341df8c3b8d99976e8fe320ddc3e1cd764f55ecac3165e69df07ef0e439b5ca5",
+      "source_page": "https://mocap.cs.cmu.edu/search.php?subjectnumber=8",
+      "source_fps": 120,
+      "first_frame": 2,
+      "last_frame": 354,
+      "license": "CMU-commercial-no-data-resale",
+      "frames": 119,
+      "fps": 24,
+      "drive_stop_frame": 71,
+      "settling_frames": 48,
+      "source_frame_numbers": "1-based source catalogue interval; inserted T-pose excluded"
+    },
+    "jump": {
+      "source": "CMU",
+      "clip": "16_01",
+      "description": "jump",
+      "url": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/016/16_01.bvh",
+      "sha256": "f989be024ec2b26099300707e182c0b96c22fdf7843757f0ba36e75a475c309c",
+      "source_page": "https://mocap.cs.cmu.edu/search.php?subjectnumber=16",
+      "source_fps": 120,
+      "first_frame": 2,
+      "last_frame": 323,
+      "license": "CMU-commercial-no-data-resale",
+      "frames": 113,
+      "fps": 24,
+      "drive_stop_frame": 65,
+      "settling_frames": 48,
+      "source_frame_numbers": "1-based source catalogue interval; inserted T-pose excluded"
+    }
+  },
+  "format": "Numeric arrays only; positions float32, head transforms float64",
+  "code": "MIT; see repository LICENSE",
+  "geometry_terms": "See LICENSES.md; no transfer of motion rights to MIT"
+}

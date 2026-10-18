@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-18",
+  "visual_verdict": "BASELINE FAIL; no solved-character claim",
+  "frames_decoded_and_inspected": {
+    "walk": 119,
+    "jump": 113
+  },
+  "decode_review_resolution": "240x240 pixels per frame",
+  "large_witnesses": {
+    "walk": [
+      7,
+      37,
+      74
+    ],
+    "jump": [
+      24,
+      37,
+      65
+    ]
+  },
+  "views": [
+    "three-quarter front",
+    "three-quarter rear"
+  ],
+  "observations": [
+    "Walk: the lower bob develops an angular nape shelf and front-edge flaring.",
+    "Jump: small lower-edge changes; weak follow-through and an angular underside remain.",
+    "Synthetic control: distinct strips move around a separate head sphere; this is a measurement control, not a production hairstyle."
+  ],
+  "files": {
+    "baseline/review.png": "f5abfb44cfa7985f36a6e390a6e4072a11b609c45127c0b6987d08625406aa95",
+    "baseline/rear-review.png": "bf0081beaae95434489ba85d5f09da4d2b1408b170c51587b83f2aca0a6bc6d3",
+    "tests/control/review.png": "bd6cdbed65818df8c60525c33214159d85bce2453b4ee5adade64f338d17aa36",
+    "baseline/walk.mp4": "ac124bdb8f4714d318ab1459e136078993f367d5325c3df88c5ef755a85f5184",
+    "baseline/jump.mp4": "5a5d4a99adbf033ec29d73dce9c7ce840d942f92ee9af5ad18ffa8585600c691"
+  },
+  "metadata": "PNG text/EXIF absent; MP4 descriptive tags removed, container format tags retained."
+}
