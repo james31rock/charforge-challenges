@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge bone-local candidate body colliders",
+  "type": "object",
+  "required": [
+    "schema",
+    "character_id",
+    "height_cm",
+    "units",
+    "source_sha256",
+    "validation_rig_sha256",
+    "armature_world",
+    "bone_bind_matrices",
+    "capsules"
+  ],
+  "properties": {
+    "schema": {
+      "const": "charforge.body-proxy/1"
+    },
+    "character_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "height_cm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "units": {
+      "const": "metres-bone-local"
+    },
+    "source_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "validation_rig_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "armature_world": {
+      "$ref": "#/$defs/matrix"
+    },
+    "bone_bind_matrices": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/matrix"
+      }
+    },
+    "capsules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "bone",
+          "a",
+          "b",
+          "radius",
+          "sampled_axis_inside"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "bone": {
+            "type": "string"
+          },
+          "a": {
+            "$ref": "#/$defs/vector"
+          },
+          "b": {
+            "$ref": "#/$defs/vector"
+          },
+          "radius": {
+            "type": "number",
+            "minimum": 0
+          },
+          "sampled_axis_inside": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "vector": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "matrix": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

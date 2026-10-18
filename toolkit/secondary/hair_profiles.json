@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "candidate; C2 calibration required",
+  "reference_length_m": 0.25,
+  "classes": {
+    "hair_short_bob": {"frequency_hz": 1.25, "damping_ratio": 0.42, "max_angle_deg": 60, "segment_collision_samples": 3, "coherent_ring": true},
+    "hair_long": {"frequency_hz": 1.5, "damping_ratio": 0.55, "max_angle_deg": 65, "segment_collision_samples": 3},
+    "hair_twin_tails": {"frequency_hz": 1.5, "damping_ratio": 0.5, "max_angle_deg": 70, "segment_collision_samples": 3}
+  }
+}

@@ -1,0 +1,1799 @@
+{
+  "imports": [
+    {
+      "file": "face/blender_face.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "face/blender_face.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "toolkit.face.raster",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "toolkit.face.surface",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "toolkit.face.hair_masks",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "toolkit.face.matte_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "name": "toolkit.face.matte_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "shutil",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "datetime",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "toolkit.face.raster",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "toolkit.face.surface",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/erase_static.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "name": "toolkit.face.surface",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "name": "toolkit.face.raster",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "name": "toolkit.face.matte_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/inpaint_skin.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/inpaint_skin.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/inpaint_skin.py",
+      "name": "toolkit.face.matte_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "__future__",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/layers.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "name": "warnings",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "name": "toolkit.face.mouth_transport",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/mouth_transport.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/mouth_transport.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/mouth_transport.py",
+      "name": "toolkit.face.mouth_morph",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/raster.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "toolkit.face.raster",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "toolkit.face.matte_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "toolkit.face.mouth_morph",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/surface.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_c8.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_c8.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/test_c8.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/test_c8.py",
+      "name": "toolkit.face.c8_gate",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "tempfile",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "wave",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "toolkit.face.timing",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "toolkit.face.surface",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "toolkit.face.timing_v2",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "toolkit.face.mouth_morph",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/test_face.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "random",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "subprocess",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "wave",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/timing.py",
+      "name": "toolkit.face.layers",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "wave",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "toolkit.face.timing",
+      "dependency": "package-local"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "name": "toolkit.face.mouth_morph",
+      "dependency": "package-local"
+    },
+    {
+      "file": "gait/__main__.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/__main__.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/__main__.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/__main__.py",
+      "name": ".core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "gait/core.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/core.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/core.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "gait/naturalness.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "gait/naturalness.py",
+      "name": ".core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "tempfile",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "gait/test_core.py",
+      "name": ".core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "name": ".test_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "name": ".naturalness",
+      "dependency": "package-local"
+    },
+    {
+      "file": "layers/core.py",
+      "name": "__future__",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "toolkit.runtime",
+      "dependency": "package-local"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "shutil",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "collections",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "bmesh",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "mathutils.bvhtree",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "toolkit.layers.core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "toolkit.rig.blender_rig",
+      "dependency": "package-local"
+    },
+    {
+      "file": "layers/fit.py",
+      "name": "toolkit.rig.geometry",
+      "dependency": "package-local"
+    },
+    {
+      "file": "layers/test_core.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "layers/test_core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "layers/test_core.py",
+      "name": "toolkit.layers.core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "__future__",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "os",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "time",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "typing",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "bmesh",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "name": "mathutils.bvhtree",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/__main__.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/__main__.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/__main__.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/__main__.py",
+      "name": ".core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "__future__",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "typing",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/core.py",
+      "name": ".hands",
+      "dependency": "package-local"
+    },
+    {
+      "file": "qa/geometry.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/geometry.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/geometry.py",
+      "name": "mathutils.bvhtree",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/hands.py",
+      "name": "__future__",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/hands.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/hands.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "qa/test_core.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/test_core.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/test_core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/test_core.py",
+      "name": "toolkit.qa.core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": ".hands",
+      "dependency": "package-local"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": ".core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "name": ".test_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "re",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "shutil",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "os",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "toolkit.rig.math_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "toolkit.rig.geometry",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "toolkit.rig.weights",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "toolkit.rig.foot_math",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "name": "toolkit.runtime",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/foot_math.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/gait_planning.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/geometry.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/geometry.py",
+      "name": "heapq",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/geometry.py",
+      "name": "toolkit.rig.math_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/geometry.py",
+      "name": "toolkit.rig.silhouette",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/math_core.py",
+      "name": "dataclasses",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/math_core.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/math_core.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/natural_gait.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/natural_gait.py",
+      "name": ".math_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/silhouette.py",
+      "name": "hashlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/silhouette.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/silhouette.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/silhouette.py",
+      "name": "PIL",
+      "dependency": "Pillow"
+    },
+    {
+      "file": "rig/test_foot_math.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_foot_math.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_foot_math.py",
+      "name": "toolkit.rig.foot_math",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_gait_planning.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_gait_planning.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_gait_planning.py",
+      "name": "toolkit.rig.gait_planning",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_geometry.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_geometry.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_geometry.py",
+      "name": "toolkit.rig.geometry",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_geometry.py",
+      "name": "toolkit.rig.weights",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_math.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_math.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_math.py",
+      "name": "toolkit.rig.math_core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_natural_gait.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_natural_gait.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_natural_gait.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_natural_gait.py",
+      "name": "toolkit.rig.natural_gait",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_silhouette.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_silhouette.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_silhouette.py",
+      "name": "toolkit.rig.silhouette",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/test_swing_clearance.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "rig/test_swing_clearance.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "rig/test_swing_clearance.py",
+      "name": "toolkit.rig.gait_planning",
+      "dependency": "package-local"
+    },
+    {
+      "file": "rig/weights.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "runtime.py",
+      "name": "os",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "runtime.py",
+      "name": "shutil",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "runtime.py",
+      "name": "tempfile",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "runtime.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/physics.py",
+      "name": "dataclasses",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/physics.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/physics.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/physics.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/physics.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "name": "toolkit.secondary.physics",
+      "dependency": "package-local"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "math",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "toolkit.secondary.physics",
+      "dependency": "package-local"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "name": "toolkit.secondary.topology",
+      "dependency": "package-local"
+    },
+    {
+      "file": "secondary/topology.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "sys",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "argparse",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "bpy",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "mathutils",
+      "dependency": "optional Blender runtime"
+    },
+    {
+      "file": "tests/blender_smoke.py",
+      "name": "toolkit.rig.blender_rig",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "copy",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "json",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "os",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "shutil",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "subprocess",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "tempfile",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "unittest",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "pathlib",
+      "dependency": "standard-library"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "cv2",
+      "dependency": "optional OpenCV runtime"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "numpy",
+      "dependency": "NumPy"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.face",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.face.mouth_likeness",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.face.surface",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.gait.core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.layers.core",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.qa.hands",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.rig.geometry",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.rig.weights",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.secondary.physics",
+      "dependency": "package-local"
+    },
+    {
+      "file": "tests/test_public_assets.py",
+      "name": "toolkit.secondary.topology",
+      "dependency": "package-local"
+    }
+  ]
+}

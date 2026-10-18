@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge S7 input",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "character_id",
+    "source",
+    "measurements",
+    "motion",
+    "outfits",
+    "kind"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "character_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "rigify",
+        "vrm",
+        "generic"
+      ]
+    },
+    "measurements": {
+      "type": "object",
+      "required": [
+        "height_cm",
+        "mass_proxy_kg"
+      ],
+      "properties": {
+        "height_cm": {
+          "type": "number",
+          "minimum": 10,
+          "maximum": 1000
+        },
+        "mass_proxy_kg": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "provenance": {
+          "type": "string"
+        }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_cache",
+        "fps"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "source_cache": {
+          "type": "string"
+        },
+        "fps": {
+          "type": "integer",
+          "minimum": 12,
+          "maximum": 120
+        }
+      }
+    },
+    "outfits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "preset"
+        ],
+        "properties": {
+          "preset": {
+            "enum": [
+              "skirt",
+              "coat_tail",
+              "hoodie_hem",
+              "drawstrings",
+              "loose_sleeve",
+              "hair_short_bob",
+              "hair_long",
+              "hair_twin_tails",
+              "ears",
+              "tail"
+            ]
+          },
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "parent_bone": {
+            "type": "string"
+          },
+          "length_m": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
+      }
+    },
+    "stop_seconds": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "simulation_hz": {
+      "type": "integer",
+      "minimum": 120,
+      "maximum": 960
+    },
+    "rig_mapping": {
+      "type": "object"
+    },
+    "chains": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "required": [
+          "id",
+          "preset",
+          "bones"
+        ],
+        "type": "object",
+        "properties": {
+          "bones": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "preset": {
+            "type": "string",
+            "enum": [
+              "skirt",
+              "coat_tail",
+              "hoodie_hem",
+              "drawstrings",
+              "loose_sleeve",
+              "hair_short_bob",
+              "hair_long",
+              "hair_twin_tails",
+              "ears",
+              "tail"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "terminal": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "hair_profile": {
+      "enum": [
+        "responsive-v1"
+      ]
+    },
+    "hair_collision_profile": {
+      "enum": [
+        "body-capsules-v1"
+      ]
+    },
+    "body_proxy_manifest": {
+      "type": "string"
+    },
+    "semantic_hair": {
+      "type": "object",
+      "required": [
+        "palette",
+        "below_bone"
+      ],
+      "properties": {
+        "palette": {
+          "type": "object"
+        },
+        "below_bone": {
+          "type": "string"
+        }
+      }
+    },
+    "hair_attachment_profile": {
+      "enum": [
+        "fused-seam-v1"
+      ]
+    }
+  }
+}

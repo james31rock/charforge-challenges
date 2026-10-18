@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge native S4 candidate receipt v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "character_id",
+    "status",
+    "height_cm",
+    "input_sha256",
+    "output_sha256",
+    "artifact",
+    "landmarks",
+    "humanoid",
+    "bones",
+    "correctives",
+    "twist_helpers",
+    "weights",
+    "gates",
+    "runtime",
+    "implementation_sha256",
+    "warnings",
+    "unvalidated"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "stage": {
+      "const": "S4"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "status": {
+      "const": "review_required"
+    },
+    "height_cm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "input_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "output_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "artifact": {
+      "const": "rig.blend"
+    },
+    "landmarks": {
+      "const": "landmarks.json"
+    },
+    "humanoid": {
+      "type": "object",
+      "minProperties": 15,
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "bones": {
+      "type": "array",
+      "minItems": 15,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "head",
+          "tail",
+          "parent",
+          "role"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "head": {
+            "$ref": "#/$defs/point"
+          },
+          "tail": {
+            "$ref": "#/$defs/point"
+          },
+          "parent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "enum": [
+              "core",
+              "arm",
+              "leg"
+            ]
+          }
+        }
+      }
+    },
+    "correctives": {
+      "type": "array"
+    },
+    "twist_helpers": {
+      "type": "array"
+    },
+    "weights": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "method",
+          "max_influences",
+          "normalization_error",
+          "vertex_count",
+          "opposite_side_weight"
+        ],
+        "properties": {
+          "max_influences": {
+            "type": "integer",
+            "maximum": 8,
+            "minimum": 1
+          },
+          "normalization_error": {
+            "type": "number",
+            "maximum": 1e-06
+          },
+          "opposite_side_weight": {
+            "type": "number",
+            "maximum": 1e-06
+          }
+        }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "required": [
+        "landmarks",
+        "motion_suite",
+        "visual_review"
+      ]
+    },
+    "runtime": {
+      "type": "object",
+      "required": [
+        "blender",
+        "numpy"
+      ]
+    },
+    "implementation_sha256": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/hash"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unvalidated": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "point": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

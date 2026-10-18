@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge invisible inner body and original surface partition",
+  "type": "object",
+  "required": [
+    "schema",
+    "character_id",
+    "height_cm",
+    "source_sha256",
+    "proxy",
+    "joints",
+    "colliders",
+    "parts",
+    "status"
+  ],
+  "properties": {
+    "schema": {
+      "const": "charforge.layers/1"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "height_cm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "review_required",
+        "failed"
+      ]
+    },
+    "proxy": {
+      "type": "object",
+      "required": [
+        "asset_sha256",
+        "visible",
+        "containment",
+        "vertices",
+        "triangles"
+      ],
+      "properties": {
+        "asset_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "visible": {
+          "const": false
+        },
+        "vertices": {
+          "type": "integer",
+          "minimum": 4
+        },
+        "triangles": {
+          "type": "integer",
+          "minimum": 4
+        },
+        "containment": {
+          "type": "object",
+          "required": [
+            "passed",
+            "outside_probes",
+            "triangle_overlap_pairs"
+          ],
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "outside_probes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "triangle_overlap_pairs": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "joints": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/vector"
+      }
+    },
+    "colliders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "head",
+          "tail",
+          "radius_m",
+          "bone"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "head": {
+            "$ref": "#/$defs/vector"
+          },
+          "tail": {
+            "$ref": "#/$defs/vector"
+          },
+          "radius_m": {
+            "type": "number",
+            "minimum": 0
+          },
+          "bone": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "object",
+          "label",
+          "faces",
+          "confidence",
+          "closed"
+        ],
+        "properties": {
+          "object": {
+            "type": "string"
+          },
+          "label": {
+            "enum": [
+              "skin",
+              "hair",
+              "top",
+              "sleeve",
+              "skirt",
+              "trousers",
+              "footwear"
+            ]
+          },
+          "faces": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "closed": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "vector": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

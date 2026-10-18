@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge periodic gait plan",
+  "type": "object",
+  "required": [
+    "schema",
+    "source_sha256",
+    "motion_source_sha256",
+    "root",
+    "spacing",
+    "knee_profile",
+    "hidden_hip_policy",
+    "secondary_rebake_required",
+    "implementation_sha256"
+  ],
+  "properties": {
+    "schema": {
+      "const": "periodic-gait-plan/1"
+    },
+    "source_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "motion_source_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "root": {
+      "type": "object",
+      "required": [
+        "coefficients_z_over_leg",
+        "harmonics",
+        "planned_range_over_leg",
+        "source_range_over_leg",
+        "maximum_reach_bound_violation_m",
+        "stride_scale",
+        "stride_search",
+        "contact_bake_samples_per_frame",
+        "subframe_contacts",
+        "policy"
+      ],
+      "properties": {
+        "coefficients_z_over_leg": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "number"
+          }
+        },
+        "harmonics": {
+          "const": 3
+        },
+        "planned_range_over_leg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "source_range_over_leg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum_reach_bound_violation_m": {
+          "type": "number",
+          "maximum": 1e-06
+        },
+        "stride_scale": {
+          "type": "number",
+          "minimum": 0.8,
+          "maximum": 1
+        },
+        "root_y_over_leg": {
+          "type": "number",
+          "minimum": -0.16,
+          "maximum": 0.16
+        },
+        "backend": {
+          "type": "object",
+          "required": [
+            "requested",
+            "selected"
+          ],
+          "properties": {
+            "requested": {
+              "enum": [
+                "periodic",
+                "kimodo"
+              ]
+            },
+            "selected": {
+              "enum": [
+                "periodic",
+                "kimodo"
+              ]
+            },
+            "adapter_sha256": {
+              "$ref": "#/$defs/hash"
+            },
+            "fallback_reason": {
+              "type": "string"
+            }
+          }
+        },
+        "naturalness": {
+          "type": "object",
+          "required": [
+            "reference_sha256",
+            "coordination_weight",
+            "source_swing_floor",
+            "trials",
+            "weight_sweep",
+            "policy"
+          ],
+          "properties": {
+            "reference_sha256": {
+              "$ref": "#/$defs/hash"
+            },
+            "coordination_weight": {
+              "enum": [
+                0.25,
+                1,
+                4
+              ]
+            },
+            "source_swing_floor": {
+              "const": true
+            },
+            "trials": {
+              "type": "array",
+              "minItems": 153,
+              "maxItems": 153
+            },
+            "weight_sweep": {
+              "type": "object",
+              "required": [
+                "0.25",
+                "1.0",
+                "4.0"
+              ]
+            },
+            "policy": {
+              "type": "string"
+            }
+          }
+        },
+        "stride_search": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "contact_bake_samples_per_frame": {
+          "const": 4
+        },
+        "subframe_contacts": {
+          "type": "array",
+          "minItems": 17,
+          "items": {
+            "type": "object",
+            "required": [
+              "frame",
+              "root_z_m",
+              "root_correction_after_plan_m",
+              "feet"
+            ],
+            "properties": {
+              "frame": {
+                "type": "number",
+                "minimum": 1
+              },
+              "root_correction_after_plan_m": {
+                "const": 0
+              },
+              "feet": {
+                "type": "object",
+                "required": [
+                  "left",
+                  "right"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "required": [
+        "extra_separation_m",
+        "extra_over_leg",
+        "margin_m",
+        "method"
+      ],
+      "properties": {
+        "extra_separation_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "extra_over_leg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "margin_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "knee_profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hidden_hip_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "secondary_rebake_required": {
+      "type": "boolean"
+    },
+    "implementation_sha256": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/hash"
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

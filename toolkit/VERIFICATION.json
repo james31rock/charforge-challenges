@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-18",
+  "modules": [
+    "qa",
+    "gait",
+    "preflight",
+    "rig",
+    "layers",
+    "secondary",
+    "face"
+  ],
+  "skills": 14,
+  "tests": {
+    "command": "python -B -m unittest discover -s toolkit -t . -v",
+    "passed": 135,
+    "total": 135,
+    "skipped": 0
+  },
+  "challenge_verifier": {
+    "command": "python -B verify.py",
+    "passed": 6,
+    "total": 6,
+    "scorers_changed": false
+  },
+  "native_rig_smoke": {
+    "passed": true,
+    "bones": 22,
+    "correctives": 11,
+    "cpu_views_reviewed": 3,
+    "scope": "Candidate construction, finite deformation and inspected simple mannequin. No production quality acceptance."
+  },
+  "preflight_professional_control": {
+    "predictors": 8,
+    "likely_failures": 0
+  },
+  "dependencies": {
+    "static_imports": 359,
+    "unknown_imports": 0,
+    "environment": "Clean Python 3.12 virtual environment with both pinned requirement files; external Blender 5.2.1."
+  },
+  "privacy": {
+    "artifact_type": "UTF-8 source and documentation only",
+    "binary_files": 0,
+    "raw_assets_copied": 0
+  },
+  "limits": [
+    "No exact identity or four-body production acceptance claim.",
+    "Optional base-specific proxy adapter has core tests; no third-party base geometry is bundled.",
+    "Existing challenge C8/6 remains frozen; toolkit face math is C8/10.",
+    "Optional external OpenCV codecs and Blender retain their separate licences."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge S5 face stage receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "character_id",
+    "height_cm",
+    "status",
+    "accepted",
+    "inputs",
+    "outputs",
+    "gates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "charforge.s5/1"
+    },
+    "stage": {
+      "const": "S5"
+    },
+    "character_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "height_cm": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1000
+    },
+    "status": {
+      "enum": [
+        "building",
+        "blocked",
+        "review_required",
+        "accepted"
+      ]
+    },
+    "accepted": {
+      "type": "boolean"
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "mesh_sha256",
+        "s1_sha256",
+        "master_sha256",
+        "audio_sha256"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "gates": {
+      "type": "object"
+    },
+    "error": {
+      "type": "string"
+    },
+    "free_disk_bytes": {
+      "type": "integer"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "accepted": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "accepted"
+          },
+          "gates": {
+            "required": [
+              "registration",
+              "visual_review",
+              "semantic_layers",
+              "C8",
+              "hair_silhouette",
+              "edge_aliasing",
+              "mouth_likeness"
+            ],
+            "properties": {
+              "registration": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "visual_review": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "semantic_layers": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "C8": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "hair_silhouette": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "edge_aliasing": {
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              },
+              "mouth_likeness": {
+                "type": "object",
+                "properties": {
+                  "pass": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "pass"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "accepted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "accepted": {
+            "const": true
+          }
+        }
+      }
+    }
+  ]
+}

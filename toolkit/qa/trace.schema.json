@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "units",
+    "height_m",
+    "hip_width_m",
+    "leg_length_m",
+    "fps",
+    "frames"
+  ],
+  "properties": {
+    "schema": {
+      "const": "qa-trace/1"
+    },
+    "units": {
+      "const": "metres-z-up"
+    },
+    "height_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "hip_width_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "leg_length_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "fps": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "intent": {
+      "enum": [
+        "walk",
+        "run",
+        "jump",
+        "static",
+        "rom",
+        "other"
+      ]
+    },
+    "floor_m": {
+      "type": "number"
+    },
+    "travel_observable": {
+      "type": "boolean"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "frames": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "frame",
+          "points"
+        ],
+        "properties": {
+          "frame": {
+            "type": "integer"
+          },
+          "points": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/xyz"
+            }
+          },
+          "feet": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "required": [
+                "heel",
+                "toe",
+                "min_z"
+              ],
+              "properties": {
+                "heel": {
+                  "$ref": "#/$defs/xyz"
+                },
+                "toe": {
+                  "$ref": "#/$defs/xyz"
+                },
+                "min_z": {
+                  "type": "number"
+                },
+                "support": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/xyz"
+                  }
+                }
+              }
+            }
+          },
+          "stance": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "landing": {
+            "type": "boolean"
+          },
+          "hand_depth_m": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "hand_crossing_extent_m": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "hair_depth_m": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "hair_relative_tip": {
+            "$ref": "#/$defs/xyz"
+          },
+          "section_retained": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "volume_retained": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "webbing_strain": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "hands": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/hand"
+            }
+          }
+        }
+      }
+    },
+    "scope": {
+      "enum": [
+        "all",
+        "c7"
+      ]
+    },
+    "hand_support_required": {
+      "type": "boolean"
+    },
+    "rest_hands": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/hand"
+      }
+    },
+    "hand_support": {
+      "type": "object",
+      "required": [
+        "schema",
+        "bound",
+        "fps",
+        "frame_count",
+        "hands"
+      ],
+      "properties": {
+        "schema": {
+          "const": "qa-hand-support/1"
+        },
+        "bound": {
+          "type": "boolean"
+        },
+        "fps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "frame_count": {
+          "type": "integer",
+          "minimum": 3
+        },
+        "source_sha256": {
+          "type": "string"
+        },
+        "cache_sha256": {
+          "type": "string"
+        },
+        "hands": {
+          "type": "object",
+          "required": [
+            "L",
+            "R"
+          ],
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "intervals"
+            ],
+            "properties": {
+              "intervals": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              },
+              "wrist_extension_range_deg": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "exclusiveMaximum": 180
+                }
+              },
+              "wrist_profile_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "dependentRequired": {
+              "wrist_extension_range_deg": [
+                "wrist_profile_reason"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "xyz": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "hand": {
+      "type": "object",
+      "properties": {
+        "wrist_extension_deg": {
+          "type": "number"
+        },
+        "wrist_neutral_deg": {
+          "type": "number"
+        },
+        "finger_bend_deg": {
+          "type": "number"
+        },
+        "palm_plane_deg": {
+          "type": "number"
+        },
+        "palm_gap_m": {
+          "type": "number"
+        },
+        "ground_depth_m": {
+          "type": "number"
+        },
+        "palm_points": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/xyz"
+          }
+        }
+      }
+    }
+  }
+}

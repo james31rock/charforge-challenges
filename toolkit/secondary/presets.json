@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "units": "metres, kilograms, seconds",
+  "reference_length_m": 0.25,
+  "reference_body_mass_kg": 35,
+  "presets": {
+    "skirt": {
+      "topology": "ring",
+      "chains": 12,
+      "segments": 3,
+      "length_height_ratio": 0.18,
+      "frequency_hz": 3.6,
+      "damping_ratio": 0.8,
+      "gravity_scale": 0.25,
+      "mass_fraction": 0.006,
+      "radius_length_ratio": 0.035,
+      "max_angle_deg": 45,
+      "collider_set": [
+        "pelvis",
+        "left_thigh",
+        "right_thigh"
+      ],
+      "lateral_links": true
+    },
+    "coat_tail": {
+      "topology": "fan",
+      "chains": 6,
+      "segments": 4,
+      "length_height_ratio": 0.29,
+      "frequency_hz": 2.4,
+      "damping_ratio": 0.7,
+      "gravity_scale": 0.5,
+      "mass_fraction": 0.012,
+      "radius_length_ratio": 0.025,
+      "max_angle_deg": 65,
+      "collider_set": [
+        "pelvis",
+        "left_thigh",
+        "right_thigh"
+      ],
+      "lateral_links": true
+    },
+    "hoodie_hem": {
+      "topology": "ring",
+      "chains": 12,
+      "segments": 2,
+      "length_height_ratio": 0.06,
+      "frequency_hz": 5.0,
+      "damping_ratio": 0.9,
+      "gravity_scale": 0.1,
+      "mass_fraction": 0.004,
+      "radius_length_ratio": 0.04,
+      "max_angle_deg": 30,
+      "collider_set": [
+        "torso",
+        "pelvis"
+      ],
+      "lateral_links": true
+    },
+    "drawstrings": {
+      "topology": "paired",
+      "chains": 2,
+      "segments": 4,
+      "length_height_ratio": 0.12,
+      "frequency_hz": 2.8,
+      "damping_ratio": 0.65,
+      "gravity_scale": 0.8,
+      "mass_fraction": 0.0003,
+      "radius_length_ratio": 0.025,
+      "max_angle_deg": 70,
+      "collider_set": [
+        "torso"
+      ],
+      "lateral_links": false
+    },
+    "loose_sleeve": {
+      "topology": "ring",
+      "chains": 8,
+      "segments": 3,
+      "length_height_ratio": 0.16,
+      "frequency_hz": 4.0,
+      "damping_ratio": 0.8,
+      "gravity_scale": 0.35,
+      "mass_fraction": 0.004,
+      "radius_length_ratio": 0.035,
+      "max_angle_deg": 40,
+      "collider_set": [
+        "upper_arm",
+        "forearm",
+        "torso"
+      ],
+      "lateral_links": true
+    },
+    "hair_short_bob": {
+      "topology": "fan",
+      "chains": 10,
+      "segments": 3,
+      "length_height_ratio": 0.12,
+      "frequency_hz": 4.0,
+      "damping_ratio": 0.8,
+      "gravity_scale": 0.15,
+      "mass_fraction": 0.0015,
+      "radius_length_ratio": 0.03,
+      "max_angle_deg": 45,
+      "collider_set": [
+        "head",
+        "neck",
+        "shoulders"
+      ],
+      "lateral_links": false
+    },
+    "hair_long": {
+      "topology": "fan",
+      "chains": 12,
+      "segments": 5,
+      "length_height_ratio": 0.32,
+      "frequency_hz": 2.2,
+      "damping_ratio": 0.75,
+      "gravity_scale": 0.3,
+      "mass_fraction": 0.004,
+      "radius_length_ratio": 0.02,
+      "max_angle_deg": 65,
+      "collider_set": [
+        "head",
+        "neck",
+        "shoulders",
+        "torso"
+      ],
+      "lateral_links": false
+    },
+    "hair_twin_tails": {
+      "topology": "paired",
+      "chains": 2,
+      "segments": 5,
+      "length_height_ratio": 0.3,
+      "frequency_hz": 2.4,
+      "damping_ratio": 0.7,
+      "gravity_scale": 0.4,
+      "mass_fraction": 0.003,
+      "radius_length_ratio": 0.06,
+      "max_angle_deg": 75,
+      "collider_set": [
+        "head",
+        "neck",
+        "shoulders",
+        "torso"
+      ],
+      "lateral_links": false
+    },
+    "ears": {
+      "topology": "paired",
+      "chains": 2,
+      "segments": 2,
+      "length_height_ratio": 0.1,
+      "frequency_hz": 4.5,
+      "damping_ratio": 0.75,
+      "gravity_scale": 0.1,
+      "mass_fraction": 0.001,
+      "radius_length_ratio": 0.08,
+      "max_angle_deg": 40,
+      "collider_set": [
+        "head"
+      ],
+      "lateral_links": false
+    },
+    "tail": {
+      "topology": "single",
+      "chains": 1,
+      "segments": 6,
+      "length_height_ratio": 0.4,
+      "frequency_hz": 2.0,
+      "damping_ratio": 0.8,
+      "gravity_scale": 0.3,
+      "mass_fraction": 0.008,
+      "radius_length_ratio": 0.06,
+      "max_angle_deg": 75,
+      "collider_set": [
+        "pelvis",
+        "left_thigh",
+        "right_thigh"
+      ],
+      "lateral_links": false
+    }
+  }
+}

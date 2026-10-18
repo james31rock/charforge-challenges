@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge gait trace v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "label",
+    "cycle_seconds",
+    "samples",
+    "rest",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "charforge-gait-trace"
+    },
+    "label": {
+      "type": "string"
+    },
+    "cycle_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "phase_origin": {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMaximum": 1
+    },
+    "height_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "height_method": {
+      "type": "string"
+    },
+    "stride_vector_m": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/point"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rest_rotations": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/rotation"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "rest": {
+      "$ref": "#/$defs/joints"
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "phase",
+          "joints"
+        ],
+        "properties": {
+          "phase": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMaximum": 1
+          },
+          "joints": {
+            "$ref": "#/$defs/joints"
+          },
+          "rotations": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/rotation"
+            }
+          },
+          "contacts": {
+            "type": "object",
+            "properties": {
+              "left": {
+                "type": "boolean"
+              },
+              "right": {
+                "type": "boolean"
+              }
+            }
+          },
+          "feet": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "min_z_m": {
+                  "type": "number"
+                },
+                "heel": {
+                  "$ref": "#/$defs/point"
+                },
+                "toe": {
+                  "$ref": "#/$defs/point"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rotation": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/point"
+      }
+    },
+    "point": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "joints": {
+      "type": "object",
+      "required": [
+        "hips",
+        "chest",
+        "head",
+        "leftUpperLeg",
+        "leftLowerLeg",
+        "leftFoot",
+        "leftToes",
+        "rightUpperLeg",
+        "rightLowerLeg",
+        "rightFoot",
+        "rightToes"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/point"
+      }
+    }
+  }
+}

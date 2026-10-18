@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharForge S3 to S4 measurement record v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "character_id",
+    "height_cm",
+    "mesh_path",
+    "orientation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "character_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "height_cm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "mesh_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "orientation": {
+      "type": "object",
+      "required": [
+        "up",
+        "forward"
+      ],
+      "properties": {
+        "up": {
+          "$ref": "#/$defs/point"
+        },
+        "forward": {
+          "$ref": "#/$defs/point"
+        }
+      },
+      "additionalProperties": false
+    },
+    "mesh_objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "body_objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "landmarks": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/point"
+      }
+    },
+    "landmark_space": {
+      "enum": [
+        "source",
+        "canonical"
+      ]
+    },
+    "landmark_confidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "silhouette_landmarks": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/point"
+      }
+    },
+    "silhouette_evidence": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "rows",
+        "confidence"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "rows": {
+          "type": "array"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "parts": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "body",
+          "garment",
+          "hair",
+          "rigid_head",
+          "shoe"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "point": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "license": "MIT",
+  "files": [
+    {
+      "file": "qa/core.py",
+      "source_sha256": "b95af0e3304727792f0b01e2c2333cbf21720e6ee1d5ba0f28afdbaff663dff5",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "39039887363e5304e623fa231d38337a5ab41e8f3221dc68773ad82f0a804720"
+    },
+    {
+      "file": "qa/hands.py",
+      "source_sha256": "124d233c41d04d9497fea9f8237f95131c2d5a2f6d1deba058b088487141a0f2",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "b5971eb963b3ed79a070b63ac9306b129ff5d1cbd9da6771536b04feef47dab8"
+    },
+    {
+      "file": "qa/geometry.py",
+      "source_sha256": "720f26955a7b682ae78e21b9e7c15b0802b68b9109e840a5758e7deec0fa00da",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "8e3205ba425a4a0c62dc3350c133b2b9c7a9ae6d2d1d12222ecc6ddfb927db24"
+    },
+    {
+      "file": "qa/make_falsifier.py",
+      "source_sha256": "8873fb886f9a2ebabe5f4da35341c1c2d211b7cae41aaee8a1470b700086db97",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "9198614ba564ce2554de51bbde3084af779e981225b8147938a1d3307996502f"
+    },
+    {
+      "file": "qa/make_c7_fixture.py",
+      "source_sha256": "5479c8133e0cbb7a3d0dd51304003e0461c96af5d2f883ef08e11ad9066d6b62",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "a78d0e37347e18ec1b8424b460616a8b82d5581c4f51143868d570e2ad2d0fc6"
+    },
+    {
+      "file": "qa/test_core.py",
+      "source_sha256": "f1aa273ed1eaec34649b76d0f500b3a643e1c02dff991e946ca26923d471ffa7",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "b76cf36f1a0c5b6bacff63807208e1416df0964385a871c7dfc76db48866a222"
+    },
+    {
+      "file": "qa/test_hands.py",
+      "source_sha256": "8748ccbca5fcdeb1c3363bc48b0aa96cce173aebe73b7f6789ed6dfb14c57492",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "353494422074e6bf24429299e7a729895c922d58b94a10cc4febc85551f704d8"
+    },
+    {
+      "file": "gait/core.py",
+      "source_sha256": "396ad52184a5787c997d4e693cf0ebe71322a779661058c1edacdd557c5263d3",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "78dc813aa37f365af284c1de9455c29aa9400bf410e27df103e1baa63b906c5d"
+    },
+    {
+      "file": "gait/naturalness.py",
+      "source_sha256": "d6a7da6d7bdb1ea427d11ae739f3b1af0191728ae93580936c13215c72f036dc",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "3f45a6a3c07120f6a4384380aa0281357eb1de39025086663496c5239e006a86"
+    },
+    {
+      "file": "gait/test_core.py",
+      "source_sha256": "96820fcb0ba5d6b1a8d3ae3752726735c88d0f26284286a1e262f1b5e0c70309",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "12352fed897c87c46a939fddf4e40cbc676da01346850e980048b3be5bedd98d"
+    },
+    {
+      "file": "gait/test_naturalness.py",
+      "source_sha256": "2ee230dd607f910bb1b269b85ee3952769aa05d7b34670f11fb408260f459164",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "169d1bcd6b3406e9fb462f49e1f312d8abbccf1f3fc0869ce7a711d010ebbd86"
+    },
+    {
+      "file": "preflight/preflight.py",
+      "source_sha256": "5e9cc28643cd1dafde5f40063f4223443468f0309b8327e6b69cf7486109e9cf",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "a1d3096982950ab02388a68f1a03e30e38cdb003a9fc5c2bfb7149aefefdd1ac"
+    },
+    {
+      "file": "rig/math_core.py",
+      "source_sha256": "013ae99c31ce503aa4a6892f4dbe42b43699d8681b2524ad93c8cb2227f38503",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "c341cba2c61f92781c89a973ab4fcd2cc9b220e11de3d9fd972693f41f88a337"
+    },
+    {
+      "file": "rig/geometry.py",
+      "source_sha256": "5b55f1a353275d712dcc615b182c32ad4308f5c9fb8a8b6ce0c147088b9b9e8a",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "2da9d1de0824bbf946adb8985c137ea7a688022172a6c5eafeed006640d8a2b6"
+    },
+    {
+      "file": "rig/weights.py",
+      "source_sha256": "d55cb561a34169f8ca73e97f84743e9048300b0866928a847b1ef83cfc9897b7",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "08af7dcc4d9222d82e21debfa87cfe0555177df2477e1646dd0327f721a14464"
+    },
+    {
+      "file": "rig/foot_math.py",
+      "source_sha256": "e9223940bbf0c6a60ca8f3ae78ceb03aea7b8d9138ce83c3092ba8b4c00e3ae3",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "ab4e001c2e263f5cacbdd507d20b17d28df8bf6f68caed8297beeb472350bf7e"
+    },
+    {
+      "file": "rig/gait_planning.py",
+      "source_sha256": "7f79b595a1a660f9524696693ed5f6d1d313cd9aa395420c44a3874b69958c0e",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "6af4c9f4fa7a3a0cd4a0fd227de601af1295fb4e4299e47a152039497f53aa42"
+    },
+    {
+      "file": "rig/natural_gait.py",
+      "source_sha256": "178d4b8d69a53564cba6faf5fbb97f4bc017b3cc05037325f80c2a6ac99d3452",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "1c93e0476886460e4e5c61d9ef1f7e0b2d80005943315b88542f752f22c433f2"
+    },
+    {
+      "file": "rig/silhouette.py",
+      "source_sha256": "d6193d02b1e39138a8b22a3a0909f5b973ddd5e48efaa7007ecbf2ffbb09b7ef",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "402134db96aeef3c61e5e1fe82896142e608231d350e6d5f79ba3f16e21bed64"
+    },
+    {
+      "file": "rig/blender_rig.py",
+      "source_sha256": "e760eb210eb9c19f95894f906f37a16dd03b5c885552f0c7278dcbc452d4fbf4",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "c9b655b70da9736542249f1a974e26651e15f4d8e137d6f4e003d696788116f8"
+    },
+    {
+      "file": "rig/test_math.py",
+      "source_sha256": "234610409f02d7a8718f2f097765d63b6ea92aecd75aa16d2f97190608d7e292",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "b2f0d6faa6594eb880b4be26267726475f15c322b8fa13606701176c3ac63dee"
+    },
+    {
+      "file": "rig/test_geometry.py",
+      "source_sha256": "b50dd6c9855679889a8f119846dc47449ba29efd9ba7da3e5520180ce90e362c",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "3c4ad69041ac070791143b4b661eee1bcc3bcb3abff752c6ed3cdf07e09ce619"
+    },
+    {
+      "file": "rig/test_foot_math.py",
+      "source_sha256": "4daec2293882e5dd78eaae2d46e591f1af7b577ffaded04829558f6399801c0c",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "304e4589f42af68e7f37d99b1cb54d53ca271d6b1c5070e63e1c3e8f47ee55c4"
+    },
+    {
+      "file": "rig/test_gait_planning.py",
+      "source_sha256": "73aea26af1233c887db51a358542cbcaa4e11e7f86bacb6ea773c5dd42aa99cc",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "45b1a437734f14d3503ff3afb60cefb7256c8feba334e36bbfb4501cf89346fa"
+    },
+    {
+      "file": "rig/test_silhouette.py",
+      "source_sha256": "b33f3c98b9619a93178a3391601319cb897b9ff6430cd59fc606db1eadc9b36a",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "96975438cfd7bf38070d9c0ae83dacae204f91e3e3a416dcac6219d86f2c3adb"
+    },
+    {
+      "file": "rig/test_natural_gait.py",
+      "source_sha256": "41a76949a9c7946b7d7428779e88c24613c1ec03656b0eb1cae6648f5e6a1f7c",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "a632845dc0998c6b4ef8931c1d9c922f20b93b7bec4c4b3be141d4fc43a06935"
+    },
+    {
+      "file": "rig/test_swing_clearance.py",
+      "source_sha256": "a43d0fe3efcf74e81cbe78101130a3212522f6ebcbf5b2cbadec6962173a7544",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "0528d11f6626c440dd536596ddc565632fe9c0d606b0d76c3125495e7d320539"
+    },
+    {
+      "file": "layers/core.py",
+      "source_sha256": "64a13eb109410222314473db93c2475b092fdbcfc2b046ea6d9a0be2459ad95b",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "a3bcda628d862c150be2eced2b08c795878aa7ce858a63a012263d1762060534"
+    },
+    {
+      "file": "layers/fit.py",
+      "source_sha256": "b46878f9f7dbb90c5d555876327d3b60cc5d0cd57676cf19e1772a119ed4ce32",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "918b3b5bc0f7d885e32e2d0898d597e0f6a0b596878fe3de2cddbdd944584ba5"
+    },
+    {
+      "file": "layers/test_core.py",
+      "source_sha256": "9b94350c4123ea240635d1c4ec683cf7a28641260aecf7a725a0e74bbbe3a999",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "f9555bf334cde942111b35a7faf9a502a10295e8b5806703ea8912bc927a4718"
+    },
+    {
+      "file": "secondary/physics.py",
+      "source_sha256": "87c70bf12a1e09422f50778cfc0b272812195079dc64c5bbd970bde4e06dd39c",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "36bbbc2209cf7386135faf0147dbdb0eadc8c2f9c520b8a9ad5858f745193e34"
+    },
+    {
+      "file": "secondary/topology.py",
+      "source_sha256": "f28ca7b956e52f4a1a4e3268b6f86945b40aaf1486b6d01410ae36c18a5dc8e0",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "e1f2eba36f19c78fb477a2aefe34dd4d9bca406aaa3db61faa1a64454093c8ca"
+    },
+    {
+      "file": "secondary/test_physics.py",
+      "source_sha256": "1882045dd35f3842e0c185fbb7b18029bf9710c8713896cc45d0de24e7dcafd9",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "57fba93320fa57bd55d059a0c886bbfe82043b75d0790136f09e4fe20b5cd5ee"
+    },
+    {
+      "file": "secondary/test_hair.py",
+      "source_sha256": "c4dcb71bd9e42ac97b469e5c664c2730136f756fdb34a342e834b797ced8b53d",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "21f26691005ce2a9e3720c2bf217095d7065b6a03b8c639f48cd453ca5681c29"
+    },
+    {
+      "file": "face/layers.py",
+      "source_sha256": "34e2f636d4a0c47eafbb2c04d73f60785c1dc7929869b7c880e951d655d8cc8c",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "3586063b76830c941091ec904834021db83ae432bfea4ed8304a8e3ba0ff21d4"
+    },
+    {
+      "file": "face/raster.py",
+      "source_sha256": "15269f848066e2f662cbdd0017796e1d9d012cc4229e2bd36f83677efc9871fc",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "3ecb2d0c9a876e8f0629a65479b8e6958a0f7f94bae30fd81b6f832804166690"
+    },
+    {
+      "file": "face/surface.py",
+      "source_sha256": "834838558d179b5d879dbc3d8446a0786589bf8387dc65988b0a244208f8b4f6",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "157cea1cc4c4d88fa8c4296009f2284f530c8e7fb3f177579fe17e9d47808821"
+    },
+    {
+      "file": "face/matte_v2.py",
+      "source_sha256": "e597ba5156ac265c7ce9710689c5f7cb63a384d06cc5e43fc5a2812778acd506",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "790bb6e2fab1ea5bd5a90ddba7e7d5aececaf4c016442360b77f2745a72de707"
+    },
+    {
+      "file": "face/mouth_morph.py",
+      "source_sha256": "d9563b3b1e709dd698aae385c0f2e75df76fd60927c5ac05205bafcc09179571",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "6ec364a36b86c495207f413c1ea9f49ed1ddb9a8d88d6076ba75cd757d53c65d"
+    },
+    {
+      "file": "face/mouth_transport.py",
+      "source_sha256": "d54388ed7be6f69275b0d19c65385c36d29a0b1abc6223cb48edf87182379043",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "ccc7809d5828119d68847d185b6740514912dec57f5fad08d0ead9c89e47a2fc"
+    },
+    {
+      "file": "face/mouth_likeness.py",
+      "source_sha256": "7f6277249f6aad77da012fad8fcd56a1c696d71ede94e6bf56996bcd99ad1f7e",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "31a17abf790a33450a3e11813b42e231a61cb08226a40d1488d989c50efc0227"
+    },
+    {
+      "file": "face/hair_masks.py",
+      "source_sha256": "128a45ff933c1c105bf225ba075e3b352d323f76f83c60e78a4052b7752e8771",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "fb13b84a48391ca39979c58a2fb6bc216aea2320d5c59ae3565a1263d15ecf02"
+    },
+    {
+      "file": "face/c8_gate.py",
+      "source_sha256": "8cb51d6d74b5d0f0fca2c4fd056fc23187dc87a74b4e1846aa69d431f09a2e63",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "710ed2dbcb6dff007a1a204e7d2fe91c4a669f9e8eb46b68fb65659dae80d009"
+    },
+    {
+      "file": "face/hair_gate.py",
+      "source_sha256": "37795341a46f9b76232019cc48c831421636ee978efb2042fe34e7cbd3ac5733",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "400aa5151340f5c0f8a0a02d1ff3a950036d1e586982a96a59d52353ae74558f"
+    },
+    {
+      "file": "face/blender_face.py",
+      "source_sha256": "a427fe13d40b706c48ed852e577395a3dbb09adb1f02b8311083fd776a5a9d54",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "40fd203e093e346a79d6d92b6f8b1097db21b52a43e4725f68bc51b504d7a573"
+    },
+    {
+      "file": "face/erase_static.py",
+      "source_sha256": "650628a0bb0ad12fc04926596ad535fb191254d03e8b85f76c90328297b45601",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "7aed040b9528c0a7031a79bc93ef17e8095eab701c4709737da012fb452dc136"
+    },
+    {
+      "file": "face/inpaint_skin.py",
+      "source_sha256": "7e5174d01dd588973d91db5e886630f5d5054de36779528a6416d4fe5807bee1",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "cbb8b07eb4b0e96ce03f385f534ef135d2a3de08e700484a34393e75ff36a1f1"
+    },
+    {
+      "file": "face/inspect_mesh.py",
+      "source_sha256": "342935a11e6ab8201978ca8e78fcfff640f717677e3ee58645c931a9cb05765e",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "166c4e8a87f6f3b64cc58e054a35109cfd5b9fff6e764e56df1c3e23ff825424"
+    },
+    {
+      "file": "face/timing.py",
+      "source_sha256": "acc90c821eebd02a0e40dfca98d9368bbaa07ee2e8b77e50803bc79a5f986380",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "5e09cc594a21aa153adb98f1be248cc0878a6bb74cffed0b47ee1d9ca67e80ee"
+    },
+    {
+      "file": "face/timing_v2.py",
+      "source_sha256": "9733a15f415d82344ee32df5f59aab4005dc5eab5af23bdf314bc0e4ee102b13",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "e380972db75329310647a049dbf544c3dc6ae22f229957ef5104683701dd42fb"
+    },
+    {
+      "file": "face/test_face.py",
+      "source_sha256": "ea187601fa6d69c572597223b705daf9dfa2d6048327a05a892442273bbe0e87",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "807cda83ec642571535b0e8688e9eacf740e53b2f7d025d333781d92390792dc"
+    },
+    {
+      "file": "face/test_c8.py",
+      "source_sha256": "f7a19a52d034a6f7ad74eab733705606a5eaf3d0b12f074591300ca30e9e7bd8",
+      "adaptation": "Local package imports, generic descriptions, portable output configuration; comments and historical annotations removed.",
+      "export_sha256": "849d94b7f097615eb2cd6c253f0daedb83226ca1a9deca7072528181ee6bd137"
+    },
+    {
+      "file": "qa/trace.schema.json",
+      "source_sha256": "5d3ce03871af39e0899e4ed41d65ce2491c5c8a3311699f2d39cccb29b0b8628",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "4ba87f81b895ccbf902a2d1748c6793c98d7ef4ba0d2901d8cdc3ddf1014882e"
+    },
+    {
+      "file": "qa/report.schema.json",
+      "source_sha256": "7bc066a0cc43f34f604d30bd42133a3c262a20d493739bbfb6a06e258a21f4d4",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "564aa229635bdd94865dd0e9502678052282dae9086152f260c9fd47376fe106"
+    },
+    {
+      "file": "gait/trace.schema.json",
+      "source_sha256": "6c40b30b7b4d107553cd832fdde185df131dbbd92af7c7f228e5ed99bfab3d2a",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "2620a86af8d011010c4178967ddc775535a144b42994d979e3a4b77fc47d294a"
+    },
+    {
+      "file": "rig/measurement.schema.json",
+      "source_sha256": "5227b454ff34248969b472aeffa66b70a2af4f0c67d3e83ac1da1b203efd887e",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "62b5ba0d693a2156abc6151bb2879c01bea49baf1ed3bf05b46bca73014a73dc"
+    },
+    {
+      "file": "rig/rig.schema.json",
+      "source_sha256": "8b6fb7e04482789b0eb4b973e71d4091a89f0814aa99cae6d88ebec845b2adb6",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "966737ed8366fcf409eb34dfd820e83cce88b8f609a1883e6714e63e81553779"
+    },
+    {
+      "file": "rig/gait_plan.schema.json",
+      "source_sha256": "eaa12ce7807c9258ee08dced8e74fcdebce309efb8460dd9c135f8be04679249",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "56ad1ae7d4bf87e4e3dbd1d7c592ac590c774b2fdf6a751be61afde4be2c9f03"
+    },
+    {
+      "file": "layers/body-proxy.schema.json",
+      "source_sha256": "3ed2c3dbce60401f4dd134c091d8bcbf078d2cf2352ed47d0f45f18014f2e732",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "bd0105e6777a2c7d5cc8984f605aa0e3ad315ad5045592720ab8a1c7458720b0"
+    },
+    {
+      "file": "layers/layers.schema.json",
+      "source_sha256": "901d7124a3223883348140d244e9d3e39dbcdd3ce69cc462ea12897be12b3257",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "270caada7fadbe96f3bb201f9acc028f470dab0b019687217a56d9f1cc5a3574"
+    },
+    {
+      "file": "secondary/presets.json",
+      "source_sha256": "0085e01be9139a197ad2ed4d5c5947068c1bad903f9c6370aee56c9bbf9e9304",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "b1920ca05087187ad94c830a3241355cd31186e571386f639faa42bbf565566f"
+    },
+    {
+      "file": "secondary/manifest.schema.json",
+      "source_sha256": "10b7d5857ca4636f453380a03c587d866586a66d37b1e8c0741c2fb80b139c71",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "f92f6ed16f29a8a12e393e516e4674e68589491197ff8dd63476e4203002efca"
+    },
+    {
+      "file": "secondary/secondary.schema.json",
+      "source_sha256": "34d69ca2aa64edd2e536da3c366ce20ebba538d7692d83f0babfa648ff2c6000",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "9aedfd267e52b78a4413cf628f93ca235bc9ea290f0053d4f6d1bc5ac8243fa9"
+    },
+    {
+      "file": "face/s5.schema.json",
+      "source_sha256": "2e4dec247d6ef835620451e2bd2af9e950c7e07889db351165c2032d4dff0f39",
+      "adaptation": "Local schema identifier and generic terminology.",
+      "export_sha256": "28a97db08ac2834220cbe0e920c842e019338d68b8a2478bc695b42ba992e712"
+    },
+    {
+      "file": "secondary/hair_profiles.json",
+      "source_sha256": "a87ef9b15fbc88c8d49ca5b1de690386ff375c71f6b0f2f1f01e82520d052d65",
+      "adaptation": "Original parameter presets.",
+      "export_sha256": "14d9a0a103b4ff3f403c97c3e8d1c6670f44310f2ad9939fc32c1a3c5fef7602"
+    }
+  ]
+}
