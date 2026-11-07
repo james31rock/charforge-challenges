@@ -137,10 +137,27 @@ def measure(d):
         summary[s + '_angles'] = {'hip_range': [float(hip.min()), float(hip.max())], 'knee_range': [float(knee.min()), float(knee.max())], 'ankle_range': [float(ankle.min()), float(ankle.max())], 'knee_heading_valid_frames': int(valid.sum()), 'knee_heading_range': [float(knee_heading[valid].min()), float(knee_heading[valid].max())] if valid.any() else None, 'foot_progression_range': [float(heading[heading_valid].min()), float(heading[heading_valid].max())] if heading_valid.any() else None, 'stance_foot_progression_range': [float(heading[mask & heading_valid].min()), float(heading[mask & heading_valid].max())] if (mask & heading_valid).any() else None, 'knee_bow_L_max': max(curves[s + '_knee_bow_L'])}
     return {'label': d['label'], 'summary': summary, 'curves': curves, 'phase_origin': d.get('phase_origin', 0), 'phase_method': d.get('phase_method')}
 
-def phase_values(values, origin, phases):
+def phase_values(values, origin, phases, circular=False):
     a = np.array([np.nan if x is None else x for x in values], float)
     n = len(a)
-    return np.interp(np.mod(phases + origin, 1), np.arange(n) / n, a, period=1)
+    if not circular:
+        return np.interp(np.mod(phases + origin, 1), np.arange(n) / n, a, period=1)
+    if not n:
+        raise ValueError('Need heading samples')
+    # Interpolate the shortest angular arc, including the last-to-first seam.
+    # Missing endpoints and antipodal endpoints do not define that arc.
+    position = np.mod(np.asarray(phases) + origin, 1) * n
+    lower = np.floor(position).astype(int) % n
+    upper = (lower + 1) % n
+    fraction = position - np.floor(position)
+    delta = (a[upper] - a[lower] + 180) % 360 - 180
+    available = np.isfinite(a[lower]) & np.isfinite(a[upper])
+    available &= ~np.isclose(abs(delta), 180, atol=1e-10, rtol=0)
+    interpolated = np.where(available, a[lower] + fraction * delta, np.nan)
+    # An exact observed sample remains usable beside an unavailable segment.
+    interpolated = np.where(np.isclose(fraction, 0, atol=1e-12, rtol=0), a[lower], interpolated)
+    interpolated = np.where(np.isclose(fraction, 1, atol=1e-12, rtol=0), a[upper], interpolated)
+    return (interpolated + 180) % 360 - 180
 
 def compare(ref, test):
     r, t = (measure(ref), measure(test))
@@ -149,8 +166,9 @@ def compare(ref, test):
     for k in r['curves'].keys() & t['curves'].keys():
         if k == 'phase' or k.endswith('_stance'):
             continue
-        a = phase_values(r['curves'][k], r['phase_origin'], phase)
-        b = phase_values(t['curves'][k], t['phase_origin'], phase)
+        circular = k.endswith(('_foot_progression_deg', '_knee_progression_deg', '_knee_plane_pelvis_deg'))
+        a = phase_values(r['curves'][k], r['phase_origin'], phase, circular=circular)
+        b = phase_values(t['curves'][k], t['phase_origin'], phase, circular=circular)
         if 'height_L' in k:
             a -= np.nanmean(a)
             b -= np.nanmean(b)
@@ -159,5 +177,8 @@ def compare(ref, test):
             if not data.get('periodic', data.get('provenance', {}).get('adapter') != 'bvh'):
                 native = np.mod(phase + data.get('phase_origin', 0), 1)
                 valid &= native <= data['samples'][-1]['phase']
-        diff[k] = {'rmse': float(np.sqrt(np.mean((a[valid] - b[valid]) ** 2))) if valid.any() else None, 'coverage': float(valid.mean())}
+        residual = a[valid] - b[valid]
+        if circular:
+            residual = (residual + 180) % 360 - 180
+        diff[k] = {'rmse': float(np.sqrt(np.mean(residual ** 2))) if valid.any() else None, 'coverage': float(valid.mean())}
     return {'schema_version': 1, 'kind': 'charforge-gait-comparison', 'status': 'diagnostic-not-acceptance', 'reference': r, 'test': t, 'phase_matched_error': diff, 'limits': ['Adult clinical context is advisory, not a chibi/child acceptance threshold.', 'COM estimate is model-dependent, not measured physical COM.', 'Joint-centre geometry is not an anatomical joint coordinate system.', 'Knee heading is undefined near extension.', 'Stance is declared or a kinematic proxy, not measured force contact.']}
