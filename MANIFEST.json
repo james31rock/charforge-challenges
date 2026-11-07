@@ -819,8 +819,8 @@
       "bytes": 3392
     },
     "toolkit/MANIFEST.json": {
-      "sha256": "c85df843f4e34514016d76ff9d4d337032d4dc5b8e4c87158dbe19870c36562a",
-      "bytes": 10844
+      "sha256": "919d46b2898c4174e5d10e8ec67bf46d411fd7e06df5d09308f675540bca9e5f",
+      "bytes": 10825
     },
     "toolkit/README.md": {
       "sha256": "3372ece5f897c931b78f6286d0b04db28b1d1abd0b9761f74a44ad5662c48061",
@@ -935,8 +935,8 @@
       "bytes": 605
     },
     "toolkit/gait/core.py": {
-      "sha256": "78dc813aa37f365af284c1de9455c29aa9400bf410e27df103e1baa63b906c5d",
-      "bytes": 12197
+      "sha256": "f5c96b131000a8bcaed0ae2b5537c50e8c0c1f184244d3fb34e5caca7abc653e",
+      "bytes": 13445
     },
     "toolkit/gait/naturalness.py": {
       "sha256": "3f45a6a3c07120f6a4384380aa0281357eb1de39025086663496c5239e006a86",
@@ -1261,6 +1261,10 @@
     "verify.py": {
       "sha256": "71190f8b9b8e8b6a5b33264b8f373f16f997a79738de4edc659e5332c17c2a10",
       "bytes": 1558
+    },
+    "toolkit/gait/test_circular.py": {
+      "sha256": "cab66f2885666bc2dd6b9d5900917a67bdec3d955c1038e786b1e8c078cc8039",
+      "bytes": 3283
     }
   }
 }

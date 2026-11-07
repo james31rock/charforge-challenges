@@ -26,7 +26,7 @@
     "face/timing_v2.py": "e380972db75329310647a049dbf544c3dc6ae22f229957ef5104683701dd42fb",
     "gait/__init__.py": "936229d7c5dc820a4765e6a82c185290ef08f2093592c4e57cc95c05268627a2",
     "gait/__main__.py": "31d1fc97d1ce486375405f605667ed0cd279b1ff883075761bbc0653e905f5b6",
-    "gait/core.py": "78dc813aa37f365af284c1de9455c29aa9400bf410e27df103e1baa63b906c5d",
+    "gait/core.py": "f5c96b131000a8bcaed0ae2b5537c50e8c0c1f184244d3fb34e5caca7abc653e",
     "gait/naturalness.py": "3f45a6a3c07120f6a4384380aa0281357eb1de39025086663496c5239e006a86",
     "gait/README.md": "4bc9fe0a6994eaf653ddd11d1ee84ddfded49912a21f8ace524daa3231633a21",
     "gait/test_core.py": "12352fed897c87c46a939fddf4e40cbc676da01346850e980048b3be5bedd98d",
@@ -111,6 +111,7 @@
     "tests/__init__.py": "3a45f5a2d61414aa6fa2a21870419584701632a280eb3f661c697aae4a7aea4c",
     "tests/blender_smoke.py": "c1482263f1b753615113d1666ab11ac20567f6714e2c177cbd4fc6317935b2ae",
     "tests/test_public_assets.py": "8487e388bae35635161a7e4ea4c8ea4e08bb8bdfb2c57f603459126dca1c3597",
-    "VERIFICATION.json": "82a98a8741c6927d1bf394df92c8dff8e3920ade2b2e8bd722ca88f3c4609824"
+    "VERIFICATION.json": "82a98a8741c6927d1bf394df92c8dff8e3920ade2b2e8bd722ca88f3c4609824",
+    "gait/test_circular.py": "cab66f2885666bc2dd6b9d5900917a67bdec3d955c1038e786b1e8c078cc8039"
   }
 }
